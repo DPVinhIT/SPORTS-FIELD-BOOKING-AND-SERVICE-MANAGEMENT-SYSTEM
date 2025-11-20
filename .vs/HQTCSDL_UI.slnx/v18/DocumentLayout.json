@@ -3,12 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\dovin\\source\\repos\\HQTCSDL_UI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{263B56EE-A51C-4B04-A17F-4567ADD5AE3E}|HQTCSDL_UI.csproj|c:\\users\\dovin\\source\\repos\\hqtcsdl_ui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{263B56EE-A51C-4B04-A17F-4567ADD5AE3E}|HQTCSDL_UI.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{263B56EE-A51C-4B04-A17F-4567ADD5AE3E}|HQTCSDL_UI.csproj|c:\\users\\dovin\\source\\repos\\hqtcsdl_ui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{263B56EE-A51C-4B04-A17F-4567ADD5AE3E}|HQTCSDL_UI.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{103A33AC-FC94-4535-AD82-4A8C9F5C6F8B}|..\\TECHNICIAN_NOTIFY\\TECHNICIAN_NOTIFY.csproj|c:\\users\\dovin\\source\\repos\\technician_notify\\notify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,28 +16,19 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\dovin\\source\\repos\\HQTCSDL_UI\\Form2.cs",
-              "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "C:\\Users\\dovin\\source\\repos\\HQTCSDL_UI\\Form2.cs",
-              "RelativeToolTip": "Form2.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAywB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T13:12:51.228Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form2.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\dovin\\source\\repos\\HQTCSDL_UI\\Form2.cs",
-              "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "C:\\Users\\dovin\\source\\repos\\HQTCSDL_UI\\Form2.cs [Design]",
-              "RelativeToolTip": "Form2.cs [Design]",
+              "Title": "Notify.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\dovin\\source\\repos\\TECHNICIAN_NOTIFY\\Notify.cs",
+              "RelativeDocumentMoniker": "..\\TECHNICIAN_NOTIFY\\Notify.cs",
+              "ToolTip": "C:\\Users\\dovin\\source\\repos\\TECHNICIAN_NOTIFY\\Notify.cs [Design]",
+              "RelativeToolTip": "..\\TECHNICIAN_NOTIFY\\Notify.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T13:02:30.932Z",
+              "WhenOpened": "2025-11-20T11:15:02.611Z",
               "EditorCaption": " [Design]"
             }
           ]
