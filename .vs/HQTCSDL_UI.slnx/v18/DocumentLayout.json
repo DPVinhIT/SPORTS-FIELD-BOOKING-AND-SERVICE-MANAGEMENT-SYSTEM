@@ -3,7 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\dovin\\source\\repos\\HQTCSDL_UI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{103A33AC-FC94-4535-AD82-4A8C9F5C6F8B}|..\\TECHNICIAN_NOTIFY\\TECHNICIAN_NOTIFY.csproj|c:\\users\\dovin\\source\\repos\\technician_notify\\notify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{51FDCEA4-49FB-4BE2-8F2F-E611E5E82E8E}|..\\MANAGER_VIEW_SHIFT\\MANAGER_VIEW_SHIFT.csproj|c:\\users\\dovin\\source\\repos\\manager_view_shift\\view_shift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FDCEA4-49FB-4BE2-8F2F-E611E5E82E8E}|..\\MANAGER_VIEW_SHIFT\\MANAGER_VIEW_SHIFT.csproj|c:\\users\\dovin\\source\\repos\\manager_view_shift\\view_shift.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{105D463E-BE68-4E91-92E8-D02F753B6F9E}|..\\MANAGER_WORKSCHEDULE\\MANAGER_WORKSCHEDULE.csproj|c:\\users\\dovin\\source\\repos\\manager_workschedule\\work_schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FDCEA4-49FB-4BE2-8F2F-E611E5E82E8E}|..\\MANAGER_VIEW_SHIFT\\MANAGER_VIEW_SHIFT.csproj|c:\\users\\dovin\\source\\repos\\manager_view_shift\\view_shift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FDCEA4-49FB-4BE2-8F2F-E611E5E82E8E}|..\\MANAGER_VIEW_SHIFT\\MANAGER_VIEW_SHIFT.csproj|c:\\users\\dovin\\source\\repos\\manager_view_shift\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,7 +25,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -21,14 +33,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Notify.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\dovin\\source\\repos\\TECHNICIAN_NOTIFY\\Notify.cs",
-              "RelativeDocumentMoniker": "..\\TECHNICIAN_NOTIFY\\Notify.cs",
-              "ToolTip": "C:\\Users\\dovin\\source\\repos\\TECHNICIAN_NOTIFY\\Notify.cs [Design]",
-              "RelativeToolTip": "..\\TECHNICIAN_NOTIFY\\Notify.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "View_Shift.cs",
+              "DocumentMoniker": "C:\\Users\\dovin\\source\\repos\\MANAGER_VIEW_SHIFT\\View_Shift.cs",
+              "RelativeDocumentMoniker": "..\\MANAGER_VIEW_SHIFT\\View_Shift.cs",
+              "ToolTip": "C:\\Users\\dovin\\source\\repos\\MANAGER_VIEW_SHIFT\\View_Shift.cs",
+              "RelativeToolTip": "..\\MANAGER_VIEW_SHIFT\\View_Shift.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T11:15:02.611Z",
+              "WhenOpened": "2025-11-21T04:15:51.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Work_Schedule.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\dovin\\source\\repos\\MANAGER_WORKSCHEDULE\\Work_Schedule.cs",
+              "RelativeDocumentMoniker": "..\\MANAGER_WORKSCHEDULE\\Work_Schedule.cs",
+              "ToolTip": "C:\\Users\\dovin\\source\\repos\\MANAGER_WORKSCHEDULE\\Work_Schedule.cs [Design]",
+              "RelativeToolTip": "..\\MANAGER_WORKSCHEDULE\\Work_Schedule.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T04:10:54.995Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "View_Shift.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\dovin\\source\\repos\\MANAGER_VIEW_SHIFT\\View_Shift.Designer.cs",
+              "RelativeDocumentMoniker": "..\\MANAGER_VIEW_SHIFT\\View_Shift.Designer.cs",
+              "ToolTip": "C:\\Users\\dovin\\source\\repos\\MANAGER_VIEW_SHIFT\\View_Shift.Designer.cs",
+              "RelativeToolTip": "..\\MANAGER_VIEW_SHIFT\\View_Shift.Designer.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAqwBwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T04:09:37.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dovin\\source\\repos\\MANAGER_VIEW_SHIFT\\Program.cs",
+              "RelativeDocumentMoniker": "..\\MANAGER_VIEW_SHIFT\\Program.cs",
+              "ToolTip": "C:\\Users\\dovin\\source\\repos\\MANAGER_VIEW_SHIFT\\Program.cs",
+              "RelativeToolTip": "..\\MANAGER_VIEW_SHIFT\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T04:09:30.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "View_Shift.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\dovin\\source\\repos\\MANAGER_VIEW_SHIFT\\View_Shift.cs",
+              "RelativeDocumentMoniker": "..\\MANAGER_VIEW_SHIFT\\View_Shift.cs",
+              "ToolTip": "C:\\Users\\dovin\\source\\repos\\MANAGER_VIEW_SHIFT\\View_Shift.cs [Design]",
+              "RelativeToolTip": "..\\MANAGER_VIEW_SHIFT\\View_Shift.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T04:08:59.784Z",
               "EditorCaption": " [Design]"
             }
           ]

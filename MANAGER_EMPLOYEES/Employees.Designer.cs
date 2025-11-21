@@ -75,11 +75,16 @@
             this.PhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BasicSalary = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TextSearch = new System.Windows.Forms.TextBox();
-            this.Search = new System.Windows.Forms.Button();
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.lblEmployee = new System.Windows.Forms.Label();
+            this.txtEmployee = new System.Windows.Forms.TextBox();
+            this.btnFilter = new System.Windows.Forms.Button();
+            this.dgvWorkSchedule = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).BeginInit();
+            this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkSchedule)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -482,7 +487,7 @@
             this.button9.ForeColor = System.Drawing.Color.MintCream;
             this.button9.Location = new System.Drawing.Point(48, 482);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(50, 23);
+            this.button9.Size = new System.Drawing.Size(61, 23);
             this.button9.TabIndex = 18;
             this.button9.Text = "Payroll";
             this.button9.UseVisualStyleBackColor = true;
@@ -652,9 +657,9 @@
             this.PhoneNumber,
             this.Role,
             this.BasicSalary});
-            this.dgvEmployees.Location = new System.Drawing.Point(222, 97);
+            this.dgvEmployees.Location = new System.Drawing.Point(260, 111);
             this.dgvEmployees.Name = "dgvEmployees";
-            this.dgvEmployees.Size = new System.Drawing.Size(1078, 542);
+            this.dgvEmployees.Size = new System.Drawing.Size(1009, 528);
             this.dgvEmployees.TabIndex = 12;
             // 
             // EmployeeID
@@ -712,34 +717,69 @@
             this.BasicSalary.HeaderText = "BasicSalary";
             this.BasicSalary.Name = "BasicSalary";
             // 
-            // TextSearch
+            // panelMain
             // 
-            this.TextSearch.Location = new System.Drawing.Point(225, 71);
-            this.TextSearch.Name = "TextSearch";
-            this.TextSearch.Size = new System.Drawing.Size(121, 20);
-            this.TextSearch.TabIndex = 14;
-            this.TextSearch.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.panelMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMain.Controls.Add(this.lblEmployee);
+            this.panelMain.Controls.Add(this.txtEmployee);
+            this.panelMain.Controls.Add(this.btnFilter);
+            this.panelMain.Controls.Add(this.dgvWorkSchedule);
+            this.panelMain.Location = new System.Drawing.Point(240, 50);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1060, 610);
+            this.panelMain.TabIndex = 41;
             // 
-            // Search
+            // lblEmployee
             // 
-            this.Search.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Search.Location = new System.Drawing.Point(352, 71);
-            this.Search.Name = "Search";
-            this.Search.Size = new System.Drawing.Size(75, 23);
-            this.Search.TabIndex = 15;
-            this.Search.Text = "Search";
-            this.Search.UseVisualStyleBackColor = true;
+            this.lblEmployee.AutoSize = true;
+            this.lblEmployee.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lblEmployee.Location = new System.Drawing.Point(3, 18);
+            this.lblEmployee.Name = "lblEmployee";
+            this.lblEmployee.Size = new System.Drawing.Size(61, 15);
+            this.lblEmployee.TabIndex = 4;
+            this.lblEmployee.Text = "Employee";
+            // 
+            // txtEmployee
+            // 
+            this.txtEmployee.Location = new System.Drawing.Point(78, 14);
+            this.txtEmployee.Name = "txtEmployee";
+            this.txtEmployee.Size = new System.Drawing.Size(200, 20);
+            this.txtEmployee.TabIndex = 5;
+            // 
+            // btnFilter
+            // 
+            this.btnFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFilter.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnFilter.Location = new System.Drawing.Point(293, 13);
+            this.btnFilter.Name = "btnFilter";
+            this.btnFilter.Size = new System.Drawing.Size(75, 25);
+            this.btnFilter.TabIndex = 6;
+            this.btnFilter.Text = "Search";
+            this.btnFilter.UseVisualStyleBackColor = true;
+            // 
+            // dgvWorkSchedule
+            // 
+            this.dgvWorkSchedule.AllowUserToAddRows = false;
+            this.dgvWorkSchedule.AllowUserToDeleteRows = false;
+            this.dgvWorkSchedule.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvWorkSchedule.BackgroundColor = System.Drawing.Color.White;
+            this.dgvWorkSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvWorkSchedule.Location = new System.Drawing.Point(20, 60);
+            this.dgvWorkSchedule.Name = "dgvWorkSchedule";
+            this.dgvWorkSchedule.ReadOnly = true;
+            this.dgvWorkSchedule.RowHeadersVisible = false;
+            this.dgvWorkSchedule.Size = new System.Drawing.Size(1008, 528);
+            this.dgvWorkSchedule.TabIndex = 50;
             // 
             // Employees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1300, 680);
-            this.Controls.Add(this.Search);
-            this.Controls.Add(this.TextSearch);
             this.Controls.Add(this.dgvEmployees);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Employees";
             this.Text = "Employees";
@@ -749,8 +789,10 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).EndInit();
+            this.panelMain.ResumeLayout(false);
+            this.panelMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkSchedule)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -813,7 +855,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PhoneNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn Role;
         private System.Windows.Forms.DataGridViewTextBoxColumn BasicSalary;
-        private System.Windows.Forms.TextBox TextSearch;
-        private System.Windows.Forms.Button Search;
+        private System.Windows.Forms.Panel panelMain;
+        private System.Windows.Forms.Label lblEmployee;
+        private System.Windows.Forms.TextBox txtEmployee;
+        private System.Windows.Forms.Button btnFilter;
+        private System.Windows.Forms.DataGridView dgvWorkSchedule;
     }
 }

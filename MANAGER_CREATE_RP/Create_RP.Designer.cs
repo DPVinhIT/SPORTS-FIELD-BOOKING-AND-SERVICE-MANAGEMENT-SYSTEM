@@ -74,8 +74,39 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.btnExportReport = new System.Windows.Forms.Button();
+            this.cboReportType = new System.Windows.Forms.ComboBox();
+            this.lblReportType = new System.Windows.Forms.Label();
+            this.dtpToDate = new System.Windows.Forms.DateTimePicker();
+            this.lblToDate = new System.Windows.Forms.Label();
+            this.dtpFromDate = new System.Windows.Forms.DateTimePicker();
+            this.lblFromDate = new System.Windows.Forms.Label();
+            this.dgvWorkSchedule = new System.Windows.Forms.DataGridView();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Month = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Year = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Revenue = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button24 = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkSchedule)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -139,7 +170,7 @@
             // 
             this.button23.FlatAppearance.BorderSize = 0;
             this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button23.ForeColor = System.Drawing.Color.MintCream;
             this.button23.Location = new System.Drawing.Point(56, 426);
             this.button23.Name = "button23";
@@ -152,7 +183,7 @@
             // 
             this.button22.FlatAppearance.BorderSize = 0;
             this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button22.ForeColor = System.Drawing.Color.MintCream;
             this.button22.Location = new System.Drawing.Point(61, 405);
             this.button22.Name = "button22";
@@ -166,7 +197,7 @@
             this.button4.BackColor = System.Drawing.Color.Green;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button4.ForeColor = System.Drawing.Color.MintCream;
             this.button4.Location = new System.Drawing.Point(47, 99);
             this.button4.Name = "button4";
@@ -180,7 +211,7 @@
             this.button21.BackColor = System.Drawing.Color.Green;
             this.button21.FlatAppearance.BorderSize = 0;
             this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button21.ForeColor = System.Drawing.Color.MintCream;
             this.button21.Location = new System.Drawing.Point(62, 378);
             this.button21.Name = "button21";
@@ -193,7 +224,7 @@
             // 
             this.button20.FlatAppearance.BorderSize = 0;
             this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button20.ForeColor = System.Drawing.Color.MintCream;
             this.button20.Location = new System.Drawing.Point(59, 327);
             this.button20.Name = "button20";
@@ -206,7 +237,7 @@
             // 
             this.button19.FlatAppearance.BorderSize = 0;
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button19.ForeColor = System.Drawing.Color.MintCream;
             this.button19.Location = new System.Drawing.Point(57, 306);
             this.button19.Name = "button19";
@@ -220,7 +251,7 @@
             this.button18.BackColor = System.Drawing.Color.SaddleBrown;
             this.button18.FlatAppearance.BorderSize = 0;
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button18.ForeColor = System.Drawing.Color.MintCream;
             this.button18.Location = new System.Drawing.Point(61, 279);
             this.button18.Name = "button18";
@@ -234,7 +265,7 @@
             this.button17.BackColor = System.Drawing.Color.Green;
             this.button17.FlatAppearance.BorderSize = 0;
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button17.ForeColor = System.Drawing.Color.MintCream;
             this.button17.Location = new System.Drawing.Point(56, 230);
             this.button17.Name = "button17";
@@ -247,7 +278,7 @@
             // 
             this.button16.FlatAppearance.BorderSize = 0;
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button16.ForeColor = System.Drawing.Color.MintCream;
             this.button16.Location = new System.Drawing.Point(59, 204);
             this.button16.Name = "button16";
@@ -269,7 +300,7 @@
             // 
             this.button15.FlatAppearance.BorderSize = 0;
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button15.ForeColor = System.Drawing.Color.MintCream;
             this.button15.Location = new System.Drawing.Point(56, 603);
             this.button15.Name = "button15";
@@ -283,7 +314,7 @@
             this.button14.BackColor = System.Drawing.Color.Green;
             this.button14.FlatAppearance.BorderSize = 0;
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button14.ForeColor = System.Drawing.Color.MintCream;
             this.button14.Location = new System.Drawing.Point(56, 575);
             this.button14.Name = "button14";
@@ -296,7 +327,7 @@
             // 
             this.button13.FlatAppearance.BorderSize = 0;
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button13.ForeColor = System.Drawing.Color.MintCream;
             this.button13.Location = new System.Drawing.Point(55, 548);
             this.button13.Name = "button13";
@@ -309,7 +340,7 @@
             // 
             this.button12.FlatAppearance.BorderSize = 0;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button12.ForeColor = System.Drawing.Color.MintCream;
             this.button12.Location = new System.Drawing.Point(44, 181);
             this.button12.Name = "button12";
@@ -340,7 +371,7 @@
             // 
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button11.ForeColor = System.Drawing.Color.MintCream;
             this.button11.Location = new System.Drawing.Point(45, 254);
             this.button11.Name = "button11";
@@ -380,7 +411,7 @@
             // 
             this.button10.FlatAppearance.BorderSize = 0;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button10.ForeColor = System.Drawing.Color.MintCream;
             this.button10.Location = new System.Drawing.Point(44, 353);
             this.button10.Name = "button10";
@@ -402,11 +433,11 @@
             // 
             this.button9.FlatAppearance.BorderSize = 0;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button9.ForeColor = System.Drawing.Color.MintCream;
             this.button9.Location = new System.Drawing.Point(48, 482);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(50, 23);
+            this.button9.Size = new System.Drawing.Size(55, 23);
             this.button9.TabIndex = 18;
             this.button9.Text = "Payroll";
             this.button9.UseVisualStyleBackColor = true;
@@ -425,7 +456,7 @@
             this.button8.BackColor = System.Drawing.Color.Green;
             this.button8.FlatAppearance.BorderSize = 0;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button8.ForeColor = System.Drawing.Color.MintCream;
             this.button8.Location = new System.Drawing.Point(45, 155);
             this.button8.Name = "button8";
@@ -448,7 +479,7 @@
             // 
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button7.ForeColor = System.Drawing.Color.MintCream;
             this.button7.Location = new System.Drawing.Point(45, 450);
             this.button7.Name = "button7";
@@ -470,7 +501,7 @@
             // 
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button6.ForeColor = System.Drawing.Color.MintCream;
             this.button6.Location = new System.Drawing.Point(45, 518);
             this.button6.Name = "button6";
@@ -483,7 +514,7 @@
             // 
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button5.ForeColor = System.Drawing.Color.MintCream;
             this.button5.Location = new System.Drawing.Point(43, 127);
             this.button5.Name = "button5";
@@ -523,7 +554,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(73, 41);
             this.label1.Name = "label1";
@@ -535,7 +566,7 @@
             // 
             this.EmployeeName.AutoSize = true;
             this.EmployeeName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EmployeeName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.EmployeeName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.EmployeeName.Location = new System.Drawing.Point(73, 19);
             this.EmployeeName.Name = "EmployeeName";
@@ -578,7 +609,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(255, -1);
             this.label2.Name = "label2";
@@ -614,7 +645,7 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Dock = System.Windows.Forms.DockStyle.Right;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.Location = new System.Drawing.Point(1282, 0);
             this.button2.Name = "button2";
@@ -636,11 +667,259 @@
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // panelMain
+            // 
+            this.panelMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMain.Controls.Add(this.dataGridView1);
+            this.panelMain.Controls.Add(this.btnExportReport);
+            this.panelMain.Controls.Add(this.cboReportType);
+            this.panelMain.Controls.Add(this.lblReportType);
+            this.panelMain.Controls.Add(this.dtpToDate);
+            this.panelMain.Controls.Add(this.lblToDate);
+            this.panelMain.Controls.Add(this.dtpFromDate);
+            this.panelMain.Controls.Add(this.lblFromDate);
+            this.panelMain.Controls.Add(this.dgvWorkSchedule);
+            this.panelMain.Location = new System.Drawing.Point(240, 50);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1100, 363);
+            this.panelMain.TabIndex = 43;
+            // 
+            // btnExportReport
+            // 
+            this.btnExportReport.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnExportReport.FlatAppearance.BorderSize = 0;
+            this.btnExportReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExportReport.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnExportReport.ForeColor = System.Drawing.Color.White;
+            this.btnExportReport.Location = new System.Drawing.Point(285, 46);
+            this.btnExportReport.Name = "btnExportReport";
+            this.btnExportReport.Size = new System.Drawing.Size(120, 25);
+            this.btnExportReport.TabIndex = 11;
+            this.btnExportReport.Text = "Export report";
+            this.btnExportReport.UseVisualStyleBackColor = false;
+            // 
+            // cboReportType
+            // 
+            this.cboReportType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboReportType.FormattingEnabled = true;
+            this.cboReportType.Location = new System.Drawing.Point(100, 52);
+            this.cboReportType.Name = "cboReportType";
+            this.cboReportType.Size = new System.Drawing.Size(160, 21);
+            this.cboReportType.TabIndex = 9;
+            // 
+            // lblReportType
+            // 
+            this.lblReportType.AutoSize = true;
+            this.lblReportType.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblReportType.Location = new System.Drawing.Point(20, 56);
+            this.lblReportType.Name = "lblReportType";
+            this.lblReportType.Size = new System.Drawing.Size(68, 15);
+            this.lblReportType.TabIndex = 8;
+            this.lblReportType.Text = "Report type";
+            // 
+            // dtpToDate
+            // 
+            this.dtpToDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpToDate.Location = new System.Drawing.Point(285, 16);
+            this.dtpToDate.Name = "dtpToDate";
+            this.dtpToDate.Size = new System.Drawing.Size(120, 20);
+            this.dtpToDate.TabIndex = 3;
+            // 
+            // lblToDate
+            // 
+            this.lblToDate.AutoSize = true;
+            this.lblToDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblToDate.Location = new System.Drawing.Point(230, 20);
+            this.lblToDate.Name = "lblToDate";
+            this.lblToDate.Size = new System.Drawing.Size(46, 15);
+            this.lblToDate.TabIndex = 2;
+            this.lblToDate.Text = "To date";
+            // 
+            // dtpFromDate
+            // 
+            this.dtpFromDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFromDate.Location = new System.Drawing.Point(95, 16);
+            this.dtpFromDate.Name = "dtpFromDate";
+            this.dtpFromDate.Size = new System.Drawing.Size(120, 20);
+            this.dtpFromDate.TabIndex = 1;
+            // 
+            // lblFromDate
+            // 
+            this.lblFromDate.AutoSize = true;
+            this.lblFromDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblFromDate.Location = new System.Drawing.Point(20, 20);
+            this.lblFromDate.Name = "lblFromDate";
+            this.lblFromDate.Size = new System.Drawing.Size(61, 15);
+            this.lblFromDate.TabIndex = 0;
+            this.lblFromDate.Text = "From date";
+            // 
+            // dgvWorkSchedule
+            // 
+            this.dgvWorkSchedule.AllowUserToAddRows = false;
+            this.dgvWorkSchedule.AllowUserToDeleteRows = false;
+            this.dgvWorkSchedule.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvWorkSchedule.BackgroundColor = System.Drawing.Color.White;
+            this.dgvWorkSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvWorkSchedule.Location = new System.Drawing.Point(23, 79);
+            this.dgvWorkSchedule.Name = "dgvWorkSchedule";
+            this.dgvWorkSchedule.ReadOnly = true;
+            this.dgvWorkSchedule.RowHeadersVisible = false;
+            this.dgvWorkSchedule.Size = new System.Drawing.Size(1060, 256);
+            this.dgvWorkSchedule.TabIndex = 50;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Month,
+            this.Year,
+            this.Revenue});
+            this.dataGridView1.Location = new System.Drawing.Point(23, 79);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1060, 256);
+            this.dataGridView1.TabIndex = 51;
+            // 
+            // Month
+            // 
+            this.Month.HeaderText = "Month";
+            this.Month.Name = "Month";
+            // 
+            // Year
+            // 
+            this.Year.HeaderText = "Year";
+            this.Year.Name = "Year";
+            // 
+            // Revenue
+            // 
+            this.Revenue.HeaderText = "Revenue";
+            this.Revenue.Name = "Revenue";
+            // 
+            // panel19
+            // 
+            this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel19.Controls.Add(this.label3);
+            this.panel19.Controls.Add(this.dataGridView2);
+            this.panel19.Controls.Add(this.button24);
+            this.panel19.Controls.Add(this.dateTimePicker1);
+            this.panel19.Controls.Add(this.label4);
+            this.panel19.Controls.Add(this.dateTimePicker2);
+            this.panel19.Controls.Add(this.label5);
+            this.panel19.Controls.Add(this.dataGridView3);
+            this.panel19.Location = new System.Drawing.Point(240, 424);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(1100, 229);
+            this.panel19.TabIndex = 44;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3});
+            this.dataGridView2.Location = new System.Drawing.Point(23, 54);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(1060, 174);
+            this.dataGridView2.TabIndex = 51;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Month";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Year";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Revenue";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // button24
+            // 
+            this.button24.BackColor = System.Drawing.Color.ForestGreen;
+            this.button24.FlatAppearance.BorderSize = 0;
+            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button24.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.button24.ForeColor = System.Drawing.Color.White;
+            this.button24.Location = new System.Drawing.Point(428, 23);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(120, 25);
+            this.button24.TabIndex = 11;
+            this.button24.Text = "Search";
+            this.button24.UseVisualStyleBackColor = false;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(285, 23);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(120, 20);
+            this.dateTimePicker1.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.label4.Location = new System.Drawing.Point(230, 27);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(46, 15);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "To date";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(95, 23);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(120, 20);
+            this.dateTimePicker2.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.label5.Location = new System.Drawing.Point(20, 27);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(61, 15);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "From date";
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AllowUserToAddRows = false;
+            this.dataGridView3.AllowUserToDeleteRows = false;
+            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView3.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(23, 54);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.ReadOnly = true;
+            this.dataGridView3.RowHeadersVisible = false;
+            this.dataGridView3.Size = new System.Drawing.Size(1060, 281);
+            this.dataGridView3.TabIndex = 50;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(2, 1);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 23);
+            this.label3.TabIndex = 52;
+            this.label3.Text = "Invoice";
+            // 
             // Create_RP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 680);
+            this.Controls.Add(this.panel19);
+            this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -650,6 +929,14 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panelMain.ResumeLayout(false);
+            this.panelMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkSchedule)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel19.ResumeLayout(false);
+            this.panel19.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -701,6 +988,30 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panelMain;
+        private System.Windows.Forms.DataGridView dgvWorkSchedule;
+        private System.Windows.Forms.Label lblFromDate;
+        private System.Windows.Forms.DateTimePicker dtpFromDate;
+        private System.Windows.Forms.Label lblToDate;
+        private System.Windows.Forms.DateTimePicker dtpToDate;
+        private System.Windows.Forms.Label lblReportType;
+        private System.Windows.Forms.ComboBox cboReportType;
+        private System.Windows.Forms.Button btnExportReport;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Month;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Year;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Revenue;
+        private System.Windows.Forms.Panel panel19;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridView dataGridView3;
     }
 }
-

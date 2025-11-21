@@ -74,8 +74,17 @@
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.lblHeader = new System.Windows.Forms.Label();
+            this.lblPeriod = new System.Windows.Forms.Label();
+            this.dtpDay = new System.Windows.Forms.DateTimePicker();
+            this.btnPrev = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.dgvSchedule = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSchedule)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -321,7 +330,7 @@
             this.button9.ForeColor = System.Drawing.Color.MintCream;
             this.button9.Location = new System.Drawing.Point(48, 482);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(50, 23);
+            this.button9.Size = new System.Drawing.Size(55, 23);
             this.button9.TabIndex = 18;
             this.button9.Text = "Payroll";
             this.button9.UseVisualStyleBackColor = true;
@@ -632,11 +641,89 @@
             this.panel2.Size = new System.Drawing.Size(221, 689);
             this.panel2.TabIndex = 20;
             // 
+            // panelMain
+            // 
+            this.panelMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMain.Controls.Add(this.lblHeader);
+            this.panelMain.Controls.Add(this.lblPeriod);
+            this.panelMain.Controls.Add(this.dtpDay);
+            this.panelMain.Controls.Add(this.btnPrev);
+            this.panelMain.Controls.Add(this.btnNext);
+            this.panelMain.Controls.Add(this.dgvSchedule);
+            this.panelMain.Location = new System.Drawing.Point(240, 50);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1100, 610);
+            this.panelMain.TabIndex = 41;
+            // 
+            // lblHeader
+            // 
+            this.lblHeader.AutoSize = true;
+            this.lblHeader.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblHeader.Location = new System.Drawing.Point(16, 1);
+            this.lblHeader.Name = "lblHeader";
+            this.lblHeader.Size = new System.Drawing.Size(208, 21);
+            this.lblHeader.TabIndex = 0;
+            this.lblHeader.Text = "My work schedule (today)";
+            // 
+            // lblPeriod
+            // 
+            this.lblPeriod.AutoSize = true;
+            this.lblPeriod.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lblPeriod.Location = new System.Drawing.Point(16, 36);
+            this.lblPeriod.Name = "lblPeriod";
+            this.lblPeriod.Size = new System.Drawing.Size(34, 15);
+            this.lblPeriod.TabIndex = 1;
+            this.lblPeriod.Text = "Date";
+            // 
+            // dtpDay
+            // 
+            this.dtpDay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDay.Location = new System.Drawing.Point(66, 32);
+            this.dtpDay.Name = "dtpDay";
+            this.dtpDay.Size = new System.Drawing.Size(110, 20);
+            this.dtpDay.TabIndex = 2;
+            // 
+            // btnPrev
+            // 
+            this.btnPrev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrev.Location = new System.Drawing.Point(196, 31);
+            this.btnPrev.Name = "btnPrev";
+            this.btnPrev.Size = new System.Drawing.Size(60, 24);
+            this.btnPrev.TabIndex = 3;
+            this.btnPrev.Text = "< Prev";
+            this.btnPrev.UseVisualStyleBackColor = true;
+            // 
+            // btnNext
+            // 
+            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNext.Location = new System.Drawing.Point(266, 31);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(60, 24);
+            this.btnNext.TabIndex = 4;
+            this.btnNext.Text = "Next >";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // dgvSchedule
+            // 
+            this.dgvSchedule.AllowUserToAddRows = false;
+            this.dgvSchedule.AllowUserToDeleteRows = false;
+            this.dgvSchedule.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvSchedule.BackgroundColor = System.Drawing.Color.White;
+            this.dgvSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSchedule.Location = new System.Drawing.Point(20, 60);
+            this.dgvSchedule.Name = "dgvSchedule";
+            this.dgvSchedule.ReadOnly = true;
+            this.dgvSchedule.RowHeadersVisible = false;
+            this.dgvSchedule.Size = new System.Drawing.Size(1060, 520);
+            this.dgvSchedule.TabIndex = 50;
+            // 
             // Work_Schedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 680);
+            this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -646,6 +733,9 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panelMain.ResumeLayout(false);
+            this.panelMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSchedule)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -697,6 +787,13 @@
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelMain;
+        private System.Windows.Forms.Label lblHeader;
+        private System.Windows.Forms.Label lblPeriod;
+        private System.Windows.Forms.DateTimePicker dtpDay;
+        private System.Windows.Forms.Button btnPrev;
+        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.DataGridView dgvSchedule;
     }
 }
 

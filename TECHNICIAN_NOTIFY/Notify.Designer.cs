@@ -33,6 +33,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button22 = new System.Windows.Forms.Button();
@@ -66,10 +68,17 @@
             this.EmployeeName = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NotifyDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Content = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.dgvWorkSchedule = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkSchedule)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -123,6 +132,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1350, 31);
             this.panel1.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(258, 1);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(172, 30);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Message System";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "label2";
             // 
             // button2
             // 
@@ -524,24 +552,57 @@
             this.panel15.Size = new System.Drawing.Size(200, 28);
             this.panel15.TabIndex = 7;
             // 
-            // label2
+            // dataGridView1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "label2";
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.STT,
+            this.NotifyDate,
+            this.Content});
+            this.dataGridView1.Location = new System.Drawing.Point(20, 60);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1060, 520);
+            this.dataGridView1.TabIndex = 7;
             // 
-            // label3
+            // STT
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(258, 1);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(172, 30);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Message System";
+            this.STT.HeaderText = "STT";
+            this.STT.Name = "STT";
+            // 
+            // NotifyDate
+            // 
+            this.NotifyDate.HeaderText = "Notify Date";
+            this.NotifyDate.Name = "NotifyDate";
+            // 
+            // Content
+            // 
+            this.Content.HeaderText = "Content";
+            this.Content.Name = "Content";
+            // 
+            // panelMain
+            // 
+            this.panelMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMain.Controls.Add(this.dataGridView1);
+            this.panelMain.Controls.Add(this.dgvWorkSchedule);
+            this.panelMain.Location = new System.Drawing.Point(240, 50);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1100, 600);
+            this.panelMain.TabIndex = 42;
+            // 
+            // dgvWorkSchedule
+            // 
+            this.dgvWorkSchedule.AllowUserToAddRows = false;
+            this.dgvWorkSchedule.AllowUserToDeleteRows = false;
+            this.dgvWorkSchedule.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvWorkSchedule.BackgroundColor = System.Drawing.Color.White;
+            this.dgvWorkSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvWorkSchedule.Location = new System.Drawing.Point(20, 60);
+            this.dgvWorkSchedule.Name = "dgvWorkSchedule";
+            this.dgvWorkSchedule.ReadOnly = true;
+            this.dgvWorkSchedule.RowHeadersVisible = false;
+            this.dgvWorkSchedule.Size = new System.Drawing.Size(1060, 520);
+            this.dgvWorkSchedule.TabIndex = 50;
             // 
             // Notify
             // 
@@ -550,6 +611,7 @@
             this.ClientSize = new System.Drawing.Size(1350, 680);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Notify";
             this.Text = "Form1";
@@ -557,6 +619,9 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panelMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkSchedule)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -602,6 +667,12 @@
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NotifyDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Content;
+        private System.Windows.Forms.Panel panelMain;
+        private System.Windows.Forms.DataGridView dgvWorkSchedule;
     }
 }
 

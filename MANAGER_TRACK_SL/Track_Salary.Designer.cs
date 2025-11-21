@@ -74,8 +74,30 @@
             this.EmployeeName = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.dgvWorkSchedule = new System.Windows.Forms.DataGridView();
+            this.button24 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.EmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Month = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Year = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BasicSalary = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Allowance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ShiftPay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SaleComission = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PenaltyFee = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TotalSalary = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkSchedule)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -483,7 +505,7 @@
             this.button9.ForeColor = System.Drawing.Color.MintCream;
             this.button9.Location = new System.Drawing.Point(48, 482);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(50, 23);
+            this.button9.Size = new System.Drawing.Size(55, 23);
             this.button9.TabIndex = 18;
             this.button9.Text = "Payroll";
             this.button9.UseVisualStyleBackColor = true;
@@ -637,11 +659,168 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(166, 29);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
+            // panelMain
+            // 
+            this.panelMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMain.Controls.Add(this.dataGridView1);
+            this.panelMain.Controls.Add(this.textBox3);
+            this.panelMain.Controls.Add(this.label3);
+            this.panelMain.Controls.Add(this.button24);
+            this.panelMain.Controls.Add(this.textBox2);
+            this.panelMain.Controls.Add(this.label4);
+            this.panelMain.Controls.Add(this.label5);
+            this.panelMain.Controls.Add(this.textBox1);
+            this.panelMain.Controls.Add(this.dgvWorkSchedule);
+            this.panelMain.Location = new System.Drawing.Point(240, 50);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1100, 610);
+            this.panelMain.TabIndex = 44;
+            // 
+            // dgvWorkSchedule
+            // 
+            this.dgvWorkSchedule.AllowUserToAddRows = false;
+            this.dgvWorkSchedule.AllowUserToDeleteRows = false;
+            this.dgvWorkSchedule.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvWorkSchedule.BackgroundColor = System.Drawing.Color.White;
+            this.dgvWorkSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvWorkSchedule.Location = new System.Drawing.Point(20, 60);
+            this.dgvWorkSchedule.Name = "dgvWorkSchedule";
+            this.dgvWorkSchedule.ReadOnly = true;
+            this.dgvWorkSchedule.RowHeadersVisible = false;
+            this.dgvWorkSchedule.Size = new System.Drawing.Size(1060, 520);
+            this.dgvWorkSchedule.TabIndex = 50;
+            // 
+            // button24
+            // 
+            this.button24.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button24.Location = new System.Drawing.Point(510, 21);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(75, 23);
+            this.button24.TabIndex = 55;
+            this.button24.Text = "Search";
+            this.button24.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(405, 23);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(86, 20);
+            this.textBox2.TabIndex = 54;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(201, 25);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 15);
+            this.label4.TabIndex = 51;
+            this.label4.Text = "Month";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(355, 25);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(31, 15);
+            this.label5.TabIndex = 53;
+            this.label5.Text = "Year";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(251, 23);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(86, 20);
+            this.textBox1.TabIndex = 52;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(28, 24);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(61, 15);
+            this.label3.TabIndex = 56;
+            this.label3.Text = "Employee";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(95, 22);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(86, 20);
+            this.textBox3.TabIndex = 57;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.EmployeeID,
+            this.Month,
+            this.Year,
+            this.BasicSalary,
+            this.Allowance,
+            this.ShiftPay,
+            this.SaleComission,
+            this.PenaltyFee,
+            this.TotalSalary});
+            this.dataGridView1.Location = new System.Drawing.Point(20, 60);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1060, 520);
+            this.dataGridView1.TabIndex = 58;
+            // 
+            // EmployeeID
+            // 
+            this.EmployeeID.HeaderText = "EmployeeID";
+            this.EmployeeID.Name = "EmployeeID";
+            // 
+            // Month
+            // 
+            this.Month.HeaderText = "Month";
+            this.Month.Name = "Month";
+            // 
+            // Year
+            // 
+            this.Year.HeaderText = "Year";
+            this.Year.Name = "Year";
+            // 
+            // BasicSalary
+            // 
+            this.BasicSalary.HeaderText = "BasicSalary";
+            this.BasicSalary.Name = "BasicSalary";
+            // 
+            // Allowance
+            // 
+            this.Allowance.HeaderText = "Allowance";
+            this.Allowance.Name = "Allowance";
+            // 
+            // ShiftPay
+            // 
+            this.ShiftPay.HeaderText = "ShiftPay";
+            this.ShiftPay.Name = "ShiftPay";
+            // 
+            // SaleComission
+            // 
+            this.SaleComission.HeaderText = "SaleComission";
+            this.SaleComission.Name = "SaleComission";
+            // 
+            // PenaltyFee
+            // 
+            this.PenaltyFee.HeaderText = "PenaltyFee";
+            this.PenaltyFee.Name = "PenaltyFee";
+            // 
+            // TotalSalary
+            // 
+            this.TotalSalary.HeaderText = "TotalSalary";
+            this.TotalSalary.Name = "TotalSalary";
+            // 
             // Track_Salary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 680);
+            this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -651,6 +830,10 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panelMain.ResumeLayout(false);
+            this.panelMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkSchedule)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -702,6 +885,25 @@
         private System.Windows.Forms.Label EmployeeName;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panelMain;
+        private System.Windows.Forms.DataGridView dgvWorkSchedule;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Month;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Year;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BasicSalary;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Allowance;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ShiftPay;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SaleComission;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PenaltyFee;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TotalSalary;
     }
 }
 

@@ -146,7 +146,7 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(0, 32);
+            this.panel2.Location = new System.Drawing.Point(0, 115);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(370, 336);
             this.panel2.TabIndex = 4;

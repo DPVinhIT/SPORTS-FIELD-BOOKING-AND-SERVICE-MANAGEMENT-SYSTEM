@@ -16,7 +16,7 @@ namespace MANAGER_LOG
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Log1());
+            Application.Run(new Log());
         }
     }
 }

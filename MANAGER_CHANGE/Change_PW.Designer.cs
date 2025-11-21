@@ -74,8 +74,22 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelChange = new System.Windows.Forms.Panel();
+            this.lblInnerTitle = new System.Windows.Forms.Label();
+            this.btnChangePassword = new System.Windows.Forms.Button();
+            this.txtConfirmPassword = new System.Windows.Forms.TextBox();
+            this.txtNewPassword = new System.Windows.Forms.TextBox();
+            this.txtOldPassword = new System.Windows.Forms.TextBox();
+            this.lblConfirmPassword = new System.Windows.Forms.Label();
+            this.lblNewPassword = new System.Windows.Forms.Label();
+            this.lblOldPassword = new System.Windows.Forms.Label();
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.dgvWorkSchedule = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panelChange.SuspendLayout();
+            this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkSchedule)).BeginInit();
             this.SuspendLayout();
             // 
             // panel8
@@ -404,7 +418,7 @@
             this.button9.ForeColor = System.Drawing.Color.MintCream;
             this.button9.Location = new System.Drawing.Point(48, 482);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(50, 23);
+            this.button9.Size = new System.Drawing.Size(55, 23);
             this.button9.TabIndex = 18;
             this.button9.Text = "Payroll";
             this.button9.UseVisualStyleBackColor = true;
@@ -567,7 +581,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(185, 30);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Change Passwrod";
+            this.label2.Text = "Change Password";
             // 
             // panel3
             // 
@@ -634,6 +648,128 @@
             this.panel1.Size = new System.Drawing.Size(1350, 31);
             this.panel1.TabIndex = 21;
             // 
+            // panelChange
+            // 
+            this.panelChange.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelChange.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelChange.Controls.Add(this.lblInnerTitle);
+            this.panelChange.Controls.Add(this.btnChangePassword);
+            this.panelChange.Controls.Add(this.txtConfirmPassword);
+            this.panelChange.Controls.Add(this.txtNewPassword);
+            this.panelChange.Controls.Add(this.txtOldPassword);
+            this.panelChange.Controls.Add(this.lblConfirmPassword);
+            this.panelChange.Controls.Add(this.lblNewPassword);
+            this.panelChange.Controls.Add(this.lblOldPassword);
+            this.panelChange.Location = new System.Drawing.Point(20, 60);
+            this.panelChange.Name = "panelChange";
+            this.panelChange.Size = new System.Drawing.Size(1060, 520);
+            this.panelChange.TabIndex = 23;
+            // 
+            // lblInnerTitle
+            // 
+            this.lblInnerTitle.AutoSize = true;
+            this.lblInnerTitle.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.lblInnerTitle.Location = new System.Drawing.Point(442, 36);
+            this.lblInnerTitle.Name = "lblInnerTitle";
+            this.lblInnerTitle.Size = new System.Drawing.Size(169, 25);
+            this.lblInnerTitle.TabIndex = 7;
+            this.lblInnerTitle.Text = "Change Password";
+            // 
+            // btnChangePassword
+            // 
+            this.btnChangePassword.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnChangePassword.FlatAppearance.BorderSize = 0;
+            this.btnChangePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChangePassword.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnChangePassword.ForeColor = System.Drawing.Color.White;
+            this.btnChangePassword.Location = new System.Drawing.Point(472, 221);
+            this.btnChangePassword.Name = "btnChangePassword";
+            this.btnChangePassword.Size = new System.Drawing.Size(160, 32);
+            this.btnChangePassword.TabIndex = 6;
+            this.btnChangePassword.Text = "Change Password";
+            this.btnChangePassword.UseVisualStyleBackColor = false;
+            // 
+            // txtConfirmPassword
+            // 
+            this.txtConfirmPassword.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtConfirmPassword.Location = new System.Drawing.Point(472, 173);
+            this.txtConfirmPassword.Name = "txtConfirmPassword";
+            this.txtConfirmPassword.PasswordChar = '●';
+            this.txtConfirmPassword.Size = new System.Drawing.Size(260, 25);
+            this.txtConfirmPassword.TabIndex = 5;
+            // 
+            // txtNewPassword
+            // 
+            this.txtNewPassword.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtNewPassword.Location = new System.Drawing.Point(472, 128);
+            this.txtNewPassword.Name = "txtNewPassword";
+            this.txtNewPassword.PasswordChar = '●';
+            this.txtNewPassword.Size = new System.Drawing.Size(260, 25);
+            this.txtNewPassword.TabIndex = 4;
+            // 
+            // txtOldPassword
+            // 
+            this.txtOldPassword.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtOldPassword.Location = new System.Drawing.Point(472, 83);
+            this.txtOldPassword.Name = "txtOldPassword";
+            this.txtOldPassword.PasswordChar = '●';
+            this.txtOldPassword.Size = new System.Drawing.Size(260, 25);
+            this.txtOldPassword.TabIndex = 3;
+            // 
+            // lblConfirmPassword
+            // 
+            this.lblConfirmPassword.AutoSize = true;
+            this.lblConfirmPassword.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblConfirmPassword.Location = new System.Drawing.Point(322, 176);
+            this.lblConfirmPassword.Name = "lblConfirmPassword";
+            this.lblConfirmPassword.Size = new System.Drawing.Size(120, 19);
+            this.lblConfirmPassword.TabIndex = 2;
+            this.lblConfirmPassword.Text = "Confirm password";
+            // 
+            // lblNewPassword
+            // 
+            this.lblNewPassword.AutoSize = true;
+            this.lblNewPassword.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblNewPassword.Location = new System.Drawing.Point(322, 131);
+            this.lblNewPassword.Name = "lblNewPassword";
+            this.lblNewPassword.Size = new System.Drawing.Size(98, 19);
+            this.lblNewPassword.TabIndex = 1;
+            this.lblNewPassword.Text = "New password";
+            // 
+            // lblOldPassword
+            // 
+            this.lblOldPassword.AutoSize = true;
+            this.lblOldPassword.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblOldPassword.Location = new System.Drawing.Point(322, 86);
+            this.lblOldPassword.Name = "lblOldPassword";
+            this.lblOldPassword.Size = new System.Drawing.Size(93, 19);
+            this.lblOldPassword.TabIndex = 0;
+            this.lblOldPassword.Text = "Old password";
+            // 
+            // panelMain
+            // 
+            this.panelMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMain.Controls.Add(this.panelChange);
+            this.panelMain.Controls.Add(this.dgvWorkSchedule);
+            this.panelMain.Location = new System.Drawing.Point(240, 50);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1100, 610);
+            this.panelMain.TabIndex = 42;
+            // 
+            // dgvWorkSchedule
+            // 
+            this.dgvWorkSchedule.AllowUserToAddRows = false;
+            this.dgvWorkSchedule.AllowUserToDeleteRows = false;
+            this.dgvWorkSchedule.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvWorkSchedule.BackgroundColor = System.Drawing.Color.White;
+            this.dgvWorkSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvWorkSchedule.Location = new System.Drawing.Point(20, 60);
+            this.dgvWorkSchedule.Name = "dgvWorkSchedule";
+            this.dgvWorkSchedule.ReadOnly = true;
+            this.dgvWorkSchedule.RowHeadersVisible = false;
+            this.dgvWorkSchedule.Size = new System.Drawing.Size(1060, 520);
+            this.dgvWorkSchedule.TabIndex = 50;
+            // 
             // Change_PW
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -641,13 +777,18 @@
             this.ClientSize = new System.Drawing.Size(1350, 680);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Change_PW";
-            this.Text = "Form1";
+            this.Text = "Change_PW";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panelChange.ResumeLayout(false);
+            this.panelChange.PerformLayout();
+            this.panelMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkSchedule)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -699,6 +840,18 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
+
+        // ==== FIELDS MỚI CHO UI ĐỔI MẬT KHẨU ====
+        private System.Windows.Forms.Panel panelChange;
+        private System.Windows.Forms.Label lblOldPassword;
+        private System.Windows.Forms.Label lblNewPassword;
+        private System.Windows.Forms.Label lblConfirmPassword;
+        private System.Windows.Forms.TextBox txtOldPassword;
+        private System.Windows.Forms.TextBox txtNewPassword;
+        private System.Windows.Forms.TextBox txtConfirmPassword;
+        private System.Windows.Forms.Button btnChangePassword;
+        private System.Windows.Forms.Label lblInnerTitle;
+        private System.Windows.Forms.Panel panelMain;
+        private System.Windows.Forms.DataGridView dgvWorkSchedule;
     }
 }
-

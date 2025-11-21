@@ -74,8 +74,23 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.RequestID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ScheduleID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DateCreate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Reason = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Accepted = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Date = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button24 = new System.Windows.Forms.Button();
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.dgvWorkSchedule = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkSchedule)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -109,7 +124,7 @@
             this.button9.ForeColor = System.Drawing.Color.MintCream;
             this.button9.Location = new System.Drawing.Point(48, 482);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(50, 23);
+            this.button9.Size = new System.Drawing.Size(55, 23);
             this.button9.TabIndex = 18;
             this.button9.Text = "Payroll";
             this.button9.UseVisualStyleBackColor = true;
@@ -249,7 +264,7 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.SaddleBrown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(48, 418);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(48, 419);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(175, 29);
             this.flowLayoutPanel1.TabIndex = 3;
@@ -459,6 +474,7 @@
             this.button18.TabIndex = 34;
             this.button18.Text = "Create";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button17
             // 
@@ -475,7 +491,7 @@
             // 
             // button16
             // 
-            this.button16.BackColor = System.Drawing.Color.SaddleBrown;
+            this.button16.BackColor = System.Drawing.Color.Green;
             this.button16.FlatAppearance.BorderSize = 0;
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -634,6 +650,108 @@
             this.panel1.Size = new System.Drawing.Size(1350, 31);
             this.panel1.TabIndex = 23;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.RequestID,
+            this.ScheduleID,
+            this.EmployeeID,
+            this.DateCreate,
+            this.Reason,
+            this.Accepted});
+            this.dataGridView1.Location = new System.Drawing.Point(20, 60);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1060, 520);
+            this.dataGridView1.TabIndex = 25;
+            // 
+            // RequestID
+            // 
+            this.RequestID.HeaderText = "RequestID";
+            this.RequestID.Name = "RequestID";
+            // 
+            // ScheduleID
+            // 
+            this.ScheduleID.HeaderText = "ScheduleID";
+            this.ScheduleID.Name = "ScheduleID";
+            // 
+            // EmployeeID
+            // 
+            this.EmployeeID.HeaderText = "EmployeeID";
+            this.EmployeeID.Name = "EmployeeID";
+            // 
+            // DateCreate
+            // 
+            this.DateCreate.HeaderText = "DateCreate";
+            this.DateCreate.Name = "DateCreate";
+            // 
+            // Reason
+            // 
+            this.Reason.HeaderText = "Reason";
+            this.Reason.Name = "Reason";
+            // 
+            // Accepted
+            // 
+            this.Accepted.HeaderText = "Accepted";
+            this.Accepted.Name = "Accepted";
+            // 
+            // Date
+            // 
+            this.Date.AutoSize = true;
+            this.Date.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Date.Location = new System.Drawing.Point(29, 33);
+            this.Date.Name = "Date";
+            this.Date.Size = new System.Drawing.Size(34, 15);
+            this.Date.TabIndex = 26;
+            this.Date.Text = "Date";
+            this.Date.Click += new System.EventHandler(this.Date_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(79, 30);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(129, 20);
+            this.textBox1.TabIndex = 27;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // button24
+            // 
+            this.button24.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button24.Location = new System.Drawing.Point(229, 28);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(75, 23);
+            this.button24.TabIndex = 28;
+            this.button24.Text = "Search";
+            this.button24.UseVisualStyleBackColor = true;
+            // 
+            // panelMain
+            // 
+            this.panelMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMain.Controls.Add(this.dataGridView1);
+            this.panelMain.Controls.Add(this.Date);
+            this.panelMain.Controls.Add(this.textBox1);
+            this.panelMain.Controls.Add(this.button24);
+            this.panelMain.Controls.Add(this.dgvWorkSchedule);
+            this.panelMain.Location = new System.Drawing.Point(240, 50);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1100, 610);
+            this.panelMain.TabIndex = 42;
+            // 
+            // dgvWorkSchedule
+            // 
+            this.dgvWorkSchedule.AllowUserToAddRows = false;
+            this.dgvWorkSchedule.AllowUserToDeleteRows = false;
+            this.dgvWorkSchedule.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvWorkSchedule.BackgroundColor = System.Drawing.Color.White;
+            this.dgvWorkSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvWorkSchedule.Location = new System.Drawing.Point(20, 60);
+            this.dgvWorkSchedule.Name = "dgvWorkSchedule";
+            this.dgvWorkSchedule.ReadOnly = true;
+            this.dgvWorkSchedule.RowHeadersVisible = false;
+            this.dgvWorkSchedule.Size = new System.Drawing.Size(1060, 520);
+            this.dgvWorkSchedule.TabIndex = 50;
+            // 
             // Approve_Request
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -641,6 +759,7 @@
             this.ClientSize = new System.Drawing.Size(1350, 680);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Approve_Request";
             this.Text = "Form1";
@@ -648,6 +767,10 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panelMain.ResumeLayout(false);
+            this.panelMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkSchedule)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -699,6 +822,18 @@
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label Date;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Panel panelMain;
+        private System.Windows.Forms.DataGridView dgvWorkSchedule;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RequestID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ScheduleID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DateCreate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Reason;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Accepted;
     }
 }
 

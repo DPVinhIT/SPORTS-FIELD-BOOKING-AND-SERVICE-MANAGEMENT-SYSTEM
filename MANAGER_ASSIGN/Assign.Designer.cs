@@ -74,8 +74,21 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnSaveSchedule = new System.Windows.Forms.Button();
+            this.btnAutoAssign = new System.Windows.Forms.Button();
+            this.cboEmployee = new System.Windows.Forms.ComboBox();
+            this.lblEmployee = new System.Windows.Forms.Label();
+            this.cboShift = new System.Windows.Forms.ComboBox();
+            this.lblShift = new System.Windows.Forms.Label();
+            this.dtpWorkDate = new System.Windows.Forms.DateTimePicker();
+            this.lblWorkDate = new System.Windows.Forms.Label();
+            this.dgvWorkSchedule = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkSchedule)).BeginInit();
             this.SuspendLayout();
             // 
             // panel8
@@ -92,7 +105,7 @@
             // 
             this.button23.FlatAppearance.BorderSize = 0;
             this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button23.ForeColor = System.Drawing.Color.MintCream;
             this.button23.Location = new System.Drawing.Point(56, 418);
             this.button23.Name = "button23";
@@ -105,7 +118,7 @@
             // 
             this.button22.FlatAppearance.BorderSize = 0;
             this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button22.ForeColor = System.Drawing.Color.MintCream;
             this.button22.Location = new System.Drawing.Point(61, 396);
             this.button22.Name = "button22";
@@ -119,7 +132,7 @@
             this.button4.BackColor = System.Drawing.Color.Green;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button4.ForeColor = System.Drawing.Color.MintCream;
             this.button4.Location = new System.Drawing.Point(47, 99);
             this.button4.Name = "button4";
@@ -132,7 +145,7 @@
             // 
             this.button21.FlatAppearance.BorderSize = 0;
             this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button21.ForeColor = System.Drawing.Color.MintCream;
             this.button21.Location = new System.Drawing.Point(62, 374);
             this.button21.Name = "button21";
@@ -145,7 +158,7 @@
             // 
             this.button20.FlatAppearance.BorderSize = 0;
             this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button20.ForeColor = System.Drawing.Color.MintCream;
             this.button20.Location = new System.Drawing.Point(59, 323);
             this.button20.Name = "button20";
@@ -158,7 +171,7 @@
             // 
             this.button19.FlatAppearance.BorderSize = 0;
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button19.ForeColor = System.Drawing.Color.MintCream;
             this.button19.Location = new System.Drawing.Point(57, 300);
             this.button19.Name = "button19";
@@ -171,7 +184,7 @@
             // 
             this.button18.FlatAppearance.BorderSize = 0;
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button18.ForeColor = System.Drawing.Color.MintCream;
             this.button18.Location = new System.Drawing.Point(61, 279);
             this.button18.Name = "button18";
@@ -184,7 +197,7 @@
             // 
             this.button17.FlatAppearance.BorderSize = 0;
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button17.ForeColor = System.Drawing.Color.MintCream;
             this.button17.Location = new System.Drawing.Point(56, 233);
             this.button17.Name = "button17";
@@ -198,7 +211,7 @@
             this.button16.BackColor = System.Drawing.Color.SaddleBrown;
             this.button16.FlatAppearance.BorderSize = 0;
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button16.ForeColor = System.Drawing.Color.MintCream;
             this.button16.Location = new System.Drawing.Point(59, 206);
             this.button16.Name = "button16";
@@ -220,7 +233,7 @@
             // 
             this.button15.FlatAppearance.BorderSize = 0;
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button15.ForeColor = System.Drawing.Color.MintCream;
             this.button15.Location = new System.Drawing.Point(56, 601);
             this.button15.Name = "button15";
@@ -233,7 +246,7 @@
             // 
             this.button14.FlatAppearance.BorderSize = 0;
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button14.ForeColor = System.Drawing.Color.MintCream;
             this.button14.Location = new System.Drawing.Point(56, 575);
             this.button14.Name = "button14";
@@ -246,7 +259,7 @@
             // 
             this.button13.FlatAppearance.BorderSize = 0;
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button13.ForeColor = System.Drawing.Color.MintCream;
             this.button13.Location = new System.Drawing.Point(55, 548);
             this.button13.Name = "button13";
@@ -259,7 +272,7 @@
             // 
             this.button12.FlatAppearance.BorderSize = 0;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button12.ForeColor = System.Drawing.Color.MintCream;
             this.button12.Location = new System.Drawing.Point(44, 181);
             this.button12.Name = "button12";
@@ -290,7 +303,7 @@
             // 
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button11.ForeColor = System.Drawing.Color.MintCream;
             this.button11.Location = new System.Drawing.Point(45, 256);
             this.button11.Name = "button11";
@@ -330,7 +343,7 @@
             // 
             this.button10.FlatAppearance.BorderSize = 0;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button10.ForeColor = System.Drawing.Color.MintCream;
             this.button10.Location = new System.Drawing.Point(44, 353);
             this.button10.Name = "button10";
@@ -399,11 +412,11 @@
             // 
             this.button9.FlatAppearance.BorderSize = 0;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button9.ForeColor = System.Drawing.Color.MintCream;
             this.button9.Location = new System.Drawing.Point(48, 482);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(50, 23);
+            this.button9.Size = new System.Drawing.Size(55, 23);
             this.button9.TabIndex = 18;
             this.button9.Text = "Payroll";
             this.button9.UseVisualStyleBackColor = true;
@@ -422,7 +435,7 @@
             this.button8.BackColor = System.Drawing.Color.Green;
             this.button8.FlatAppearance.BorderSize = 0;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button8.ForeColor = System.Drawing.Color.MintCream;
             this.button8.Location = new System.Drawing.Point(45, 155);
             this.button8.Name = "button8";
@@ -445,7 +458,7 @@
             // 
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button7.ForeColor = System.Drawing.Color.MintCream;
             this.button7.Location = new System.Drawing.Point(45, 450);
             this.button7.Name = "button7";
@@ -467,7 +480,7 @@
             // 
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button6.ForeColor = System.Drawing.Color.MintCream;
             this.button6.Location = new System.Drawing.Point(45, 518);
             this.button6.Name = "button6";
@@ -480,7 +493,7 @@
             // 
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.button5.ForeColor = System.Drawing.Color.MintCream;
             this.button5.Location = new System.Drawing.Point(43, 127);
             this.button5.Name = "button5";
@@ -520,7 +533,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(73, 41);
             this.label1.Name = "label1";
@@ -532,7 +545,7 @@
             // 
             this.EmployeeName.AutoSize = true;
             this.EmployeeName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EmployeeName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.EmployeeName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.EmployeeName.Location = new System.Drawing.Point(73, 19);
             this.EmployeeName.Name = "EmployeeName";
@@ -560,7 +573,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(255, -1);
             this.label2.Name = "label2";
@@ -596,7 +609,7 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Dock = System.Windows.Forms.DockStyle.Right;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.Location = new System.Drawing.Point(1282, 0);
             this.button2.Name = "button2";
@@ -633,11 +646,136 @@
             this.panel1.Size = new System.Drawing.Size(1350, 31);
             this.panel1.TabIndex = 21;
             // 
+            // panelMain
+            // 
+            this.panelMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMain.Controls.Add(this.btnClear);
+            this.panelMain.Controls.Add(this.btnSaveSchedule);
+            this.panelMain.Controls.Add(this.btnAutoAssign);
+            this.panelMain.Controls.Add(this.cboEmployee);
+            this.panelMain.Controls.Add(this.lblEmployee);
+            this.panelMain.Controls.Add(this.cboShift);
+            this.panelMain.Controls.Add(this.lblShift);
+            this.panelMain.Controls.Add(this.dtpWorkDate);
+            this.panelMain.Controls.Add(this.lblWorkDate);
+            this.panelMain.Controls.Add(this.dgvWorkSchedule);
+            this.panelMain.Location = new System.Drawing.Point(240, 50);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1100, 610);
+            this.panelMain.TabIndex = 42;
+            // 
+            // btnClear
+            // 
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnClear.Location = new System.Drawing.Point(620, 49);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(80, 25);
+            this.btnClear.TabIndex = 10;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            // 
+            // btnSaveSchedule
+            // 
+            this.btnSaveSchedule.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnSaveSchedule.FlatAppearance.BorderSize = 0;
+            this.btnSaveSchedule.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveSchedule.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnSaveSchedule.ForeColor = System.Drawing.Color.White;
+            this.btnSaveSchedule.Location = new System.Drawing.Point(490, 49);
+            this.btnSaveSchedule.Name = "btnSaveSchedule";
+            this.btnSaveSchedule.Size = new System.Drawing.Size(120, 25);
+            this.btnSaveSchedule.TabIndex = 9;
+            this.btnSaveSchedule.Text = "Save schedule";
+            this.btnSaveSchedule.UseVisualStyleBackColor = false;
+            // 
+            // btnAutoAssign
+            // 
+            this.btnAutoAssign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAutoAssign.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAutoAssign.Location = new System.Drawing.Point(360, 49);
+            this.btnAutoAssign.Name = "btnAutoAssign";
+            this.btnAutoAssign.Size = new System.Drawing.Size(110, 25);
+            this.btnAutoAssign.TabIndex = 8;
+            this.btnAutoAssign.Text = "Auto assign";
+            this.btnAutoAssign.UseVisualStyleBackColor = true;
+            // 
+            // cboEmployee
+            // 
+            this.cboEmployee.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEmployee.FormattingEnabled = true;
+            this.cboEmployee.Location = new System.Drawing.Point(100, 51);
+            this.cboEmployee.Name = "cboEmployee";
+            this.cboEmployee.Size = new System.Drawing.Size(240, 21);
+            this.cboEmployee.TabIndex = 7;
+            // 
+            // lblEmployee
+            // 
+            this.lblEmployee.AutoSize = true;
+            this.lblEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblEmployee.Location = new System.Drawing.Point(20, 55);
+            this.lblEmployee.Name = "lblEmployee";
+            this.lblEmployee.Size = new System.Drawing.Size(59, 15);
+            this.lblEmployee.TabIndex = 6;
+            this.lblEmployee.Text = "Employee";
+            // 
+            // cboShift
+            // 
+            this.cboShift.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboShift.FormattingEnabled = true;
+            this.cboShift.Location = new System.Drawing.Point(300, 16);
+            this.cboShift.Name = "cboShift";
+            this.cboShift.Size = new System.Drawing.Size(130, 21);
+            this.cboShift.TabIndex = 3;
+            // 
+            // lblShift
+            // 
+            this.lblShift.AutoSize = true;
+            this.lblShift.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblShift.Location = new System.Drawing.Point(250, 20);
+            this.lblShift.Name = "lblShift";
+            this.lblShift.Size = new System.Drawing.Size(31, 15);
+            this.lblShift.TabIndex = 2;
+            this.lblShift.Text = "Shift";
+            // 
+            // dtpWorkDate
+            // 
+            this.dtpWorkDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpWorkDate.Location = new System.Drawing.Point(100, 16);
+            this.dtpWorkDate.Name = "dtpWorkDate";
+            this.dtpWorkDate.Size = new System.Drawing.Size(120, 20);
+            this.dtpWorkDate.TabIndex = 1;
+            // 
+            // lblWorkDate
+            // 
+            this.lblWorkDate.AutoSize = true;
+            this.lblWorkDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblWorkDate.Location = new System.Drawing.Point(20, 20);
+            this.lblWorkDate.Name = "lblWorkDate";
+            this.lblWorkDate.Size = new System.Drawing.Size(61, 15);
+            this.lblWorkDate.TabIndex = 0;
+            this.lblWorkDate.Text = "Work date";
+            // 
+            // dgvWorkSchedule
+            // 
+            this.dgvWorkSchedule.AllowUserToAddRows = false;
+            this.dgvWorkSchedule.AllowUserToDeleteRows = false;
+            this.dgvWorkSchedule.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvWorkSchedule.BackgroundColor = System.Drawing.Color.White;
+            this.dgvWorkSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvWorkSchedule.Location = new System.Drawing.Point(20, 100);
+            this.dgvWorkSchedule.Name = "dgvWorkSchedule";
+            this.dgvWorkSchedule.ReadOnly = true;
+            this.dgvWorkSchedule.RowHeadersVisible = false;
+            this.dgvWorkSchedule.Size = new System.Drawing.Size(1060, 490);
+            this.dgvWorkSchedule.TabIndex = 50;
+            // 
             // Assign
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 680);
+            this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -647,6 +785,9 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panelMain.ResumeLayout(false);
+            this.panelMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkSchedule)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -698,6 +839,17 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
+
+        private System.Windows.Forms.Panel panelMain;
+        private System.Windows.Forms.DataGridView dgvWorkSchedule;
+        private System.Windows.Forms.Label lblWorkDate;
+        private System.Windows.Forms.DateTimePicker dtpWorkDate;
+        private System.Windows.Forms.Label lblShift;
+        private System.Windows.Forms.ComboBox cboShift;
+        private System.Windows.Forms.Label lblEmployee;
+        private System.Windows.Forms.ComboBox cboEmployee;
+        private System.Windows.Forms.Button btnAutoAssign;
+        private System.Windows.Forms.Button btnSaveSchedule;
+        private System.Windows.Forms.Button btnClear;
     }
 }
-

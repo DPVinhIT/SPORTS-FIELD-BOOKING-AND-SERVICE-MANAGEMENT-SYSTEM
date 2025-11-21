@@ -16,5 +16,15 @@ namespace MANAGER_WORKSCHEDULE
         {
             InitializeComponent();
         }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

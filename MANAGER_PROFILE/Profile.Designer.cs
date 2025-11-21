@@ -74,8 +74,37 @@
             this.EmployeeName = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelProfile = new System.Windows.Forms.Panel();
+            this.picAvatar = new System.Windows.Forms.PictureBox();
+            this.lblNameBig = new System.Windows.Forms.Label();
+            this.lblRole = new System.Windows.Forms.Label();
+            this.lblEmpId = new System.Windows.Forms.Label();
+            this.txtEmpId = new System.Windows.Forms.TextBox();
+            this.lblGender = new System.Windows.Forms.Label();
+            this.txtGender = new System.Windows.Forms.TextBox();
+            this.lblBirthday = new System.Windows.Forms.Label();
+            this.txtBirthday = new System.Windows.Forms.TextBox();
+            this.lblCCCD = new System.Windows.Forms.Label();
+            this.txtCCCD = new System.Windows.Forms.TextBox();
+            this.lblPhone = new System.Windows.Forms.Label();
+            this.txtPhone = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.lblStartDate = new System.Windows.Forms.Label();
+            this.txtStartDate = new System.Windows.Forms.TextBox();
+            this.lblBasicSalary = new System.Windows.Forms.Label();
+            this.txtBasicSalary = new System.Windows.Forms.TextBox();
+            this.btnEditProfile = new System.Windows.Forms.Button();
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.dgvWorkSchedule = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panelProfile.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
+            this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkSchedule)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -483,7 +512,7 @@
             this.button9.ForeColor = System.Drawing.Color.MintCream;
             this.button9.Location = new System.Drawing.Point(48, 482);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(50, 23);
+            this.button9.Size = new System.Drawing.Size(55, 23);
             this.button9.TabIndex = 18;
             this.button9.Text = "Payroll";
             this.button9.UseVisualStyleBackColor = true;
@@ -637,6 +666,256 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(166, 29);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
+            // panelProfile
+            // 
+            this.panelProfile.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelProfile.Controls.Add(this.picAvatar);
+            this.panelProfile.Controls.Add(this.lblNameBig);
+            this.panelProfile.Controls.Add(this.lblRole);
+            this.panelProfile.Controls.Add(this.lblEmpId);
+            this.panelProfile.Controls.Add(this.txtEmpId);
+            this.panelProfile.Controls.Add(this.lblGender);
+            this.panelProfile.Controls.Add(this.txtGender);
+            this.panelProfile.Controls.Add(this.lblBirthday);
+            this.panelProfile.Controls.Add(this.txtBirthday);
+            this.panelProfile.Controls.Add(this.lblCCCD);
+            this.panelProfile.Controls.Add(this.txtCCCD);
+            this.panelProfile.Controls.Add(this.lblPhone);
+            this.panelProfile.Controls.Add(this.txtPhone);
+            this.panelProfile.Controls.Add(this.lblEmail);
+            this.panelProfile.Controls.Add(this.txtEmail);
+            this.panelProfile.Controls.Add(this.lblAddress);
+            this.panelProfile.Controls.Add(this.txtAddress);
+            this.panelProfile.Controls.Add(this.lblStartDate);
+            this.panelProfile.Controls.Add(this.txtStartDate);
+            this.panelProfile.Controls.Add(this.lblBasicSalary);
+            this.panelProfile.Controls.Add(this.txtBasicSalary);
+            this.panelProfile.Controls.Add(this.btnEditProfile);
+            this.panelProfile.Location = new System.Drawing.Point(261, 111);
+            this.panelProfile.Name = "panelProfile";
+            this.panelProfile.Size = new System.Drawing.Size(1060, 520);
+            this.panelProfile.TabIndex = 29;
+            // 
+            // picAvatar
+            // 
+            this.picAvatar.Location = new System.Drawing.Point(133, 39);
+            this.picAvatar.Name = "picAvatar";
+            this.picAvatar.Size = new System.Drawing.Size(90, 90);
+            this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picAvatar.TabIndex = 0;
+            this.picAvatar.TabStop = false;
+            // 
+            // lblNameBig
+            // 
+            this.lblNameBig.AutoSize = true;
+            this.lblNameBig.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.lblNameBig.Location = new System.Drawing.Point(238, 44);
+            this.lblNameBig.Name = "lblNameBig";
+            this.lblNameBig.Size = new System.Drawing.Size(150, 25);
+            this.lblNameBig.TabIndex = 1;
+            this.lblNameBig.Text = "EmployeeName";
+            // 
+            // lblRole
+            // 
+            this.lblRole.AutoSize = true;
+            this.lblRole.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblRole.ForeColor = System.Drawing.Color.DimGray;
+            this.lblRole.Location = new System.Drawing.Point(245, 75);
+            this.lblRole.Name = "lblRole";
+            this.lblRole.Size = new System.Drawing.Size(54, 15);
+            this.lblRole.TabIndex = 2;
+            this.lblRole.Text = "Manager";
+            // 
+            // lblEmpId
+            // 
+            this.lblEmpId.AutoSize = true;
+            this.lblEmpId.Location = new System.Drawing.Point(138, 159);
+            this.lblEmpId.Name = "lblEmpId";
+            this.lblEmpId.Size = new System.Drawing.Size(67, 13);
+            this.lblEmpId.TabIndex = 3;
+            this.lblEmpId.Text = "Employee ID";
+            // 
+            // txtEmpId
+            // 
+            this.txtEmpId.Location = new System.Drawing.Point(248, 156);
+            this.txtEmpId.Name = "txtEmpId";
+            this.txtEmpId.ReadOnly = true;
+            this.txtEmpId.Size = new System.Drawing.Size(200, 20);
+            this.txtEmpId.TabIndex = 4;
+            // 
+            // lblGender
+            // 
+            this.lblGender.AutoSize = true;
+            this.lblGender.Location = new System.Drawing.Point(138, 189);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(42, 13);
+            this.lblGender.TabIndex = 5;
+            this.lblGender.Text = "Gender";
+            // 
+            // txtGender
+            // 
+            this.txtGender.Location = new System.Drawing.Point(248, 186);
+            this.txtGender.Name = "txtGender";
+            this.txtGender.ReadOnly = true;
+            this.txtGender.Size = new System.Drawing.Size(200, 20);
+            this.txtGender.TabIndex = 6;
+            // 
+            // lblBirthday
+            // 
+            this.lblBirthday.AutoSize = true;
+            this.lblBirthday.Location = new System.Drawing.Point(138, 219);
+            this.lblBirthday.Name = "lblBirthday";
+            this.lblBirthday.Size = new System.Drawing.Size(45, 13);
+            this.lblBirthday.TabIndex = 7;
+            this.lblBirthday.Text = "Birthday";
+            // 
+            // txtBirthday
+            // 
+            this.txtBirthday.Location = new System.Drawing.Point(248, 216);
+            this.txtBirthday.Name = "txtBirthday";
+            this.txtBirthday.ReadOnly = true;
+            this.txtBirthday.Size = new System.Drawing.Size(200, 20);
+            this.txtBirthday.TabIndex = 8;
+            // 
+            // lblCCCD
+            // 
+            this.lblCCCD.AutoSize = true;
+            this.lblCCCD.Location = new System.Drawing.Point(138, 249);
+            this.lblCCCD.Name = "lblCCCD";
+            this.lblCCCD.Size = new System.Drawing.Size(75, 13);
+            this.lblCCCD.TabIndex = 9;
+            this.lblCCCD.Text = "CCCD / ID No";
+            // 
+            // txtCCCD
+            // 
+            this.txtCCCD.Location = new System.Drawing.Point(248, 246);
+            this.txtCCCD.Name = "txtCCCD";
+            this.txtCCCD.ReadOnly = true;
+            this.txtCCCD.Size = new System.Drawing.Size(200, 20);
+            this.txtCCCD.TabIndex = 10;
+            // 
+            // lblPhone
+            // 
+            this.lblPhone.AutoSize = true;
+            this.lblPhone.Location = new System.Drawing.Point(508, 159);
+            this.lblPhone.Name = "lblPhone";
+            this.lblPhone.Size = new System.Drawing.Size(76, 13);
+            this.lblPhone.TabIndex = 11;
+            this.lblPhone.Text = "Phone number";
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.Location = new System.Drawing.Point(618, 156);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.ReadOnly = true;
+            this.txtPhone.Size = new System.Drawing.Size(230, 20);
+            this.txtPhone.TabIndex = 12;
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(508, 189);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(32, 13);
+            this.lblEmail.TabIndex = 13;
+            this.lblEmail.Text = "Email";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(618, 186);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.ReadOnly = true;
+            this.txtEmail.Size = new System.Drawing.Size(230, 20);
+            this.txtEmail.TabIndex = 14;
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Location = new System.Drawing.Point(508, 219);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(45, 13);
+            this.lblAddress.TabIndex = 15;
+            this.lblAddress.Text = "Address";
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Location = new System.Drawing.Point(618, 216);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.ReadOnly = true;
+            this.txtAddress.Size = new System.Drawing.Size(230, 50);
+            this.txtAddress.TabIndex = 16;
+            // 
+            // lblStartDate
+            // 
+            this.lblStartDate.AutoSize = true;
+            this.lblStartDate.Location = new System.Drawing.Point(138, 281);
+            this.lblStartDate.Name = "lblStartDate";
+            this.lblStartDate.Size = new System.Drawing.Size(53, 13);
+            this.lblStartDate.TabIndex = 21;
+            this.lblStartDate.Text = "Start date";
+            // 
+            // txtStartDate
+            // 
+            this.txtStartDate.Location = new System.Drawing.Point(248, 278);
+            this.txtStartDate.Name = "txtStartDate";
+            this.txtStartDate.ReadOnly = true;
+            this.txtStartDate.Size = new System.Drawing.Size(200, 20);
+            this.txtStartDate.TabIndex = 22;
+            // 
+            // lblBasicSalary
+            // 
+            this.lblBasicSalary.AutoSize = true;
+            this.lblBasicSalary.Location = new System.Drawing.Point(508, 281);
+            this.lblBasicSalary.Name = "lblBasicSalary";
+            this.lblBasicSalary.Size = new System.Drawing.Size(63, 13);
+            this.lblBasicSalary.TabIndex = 23;
+            this.lblBasicSalary.Text = "Basic salary";
+            // 
+            // txtBasicSalary
+            // 
+            this.txtBasicSalary.Location = new System.Drawing.Point(618, 278);
+            this.txtBasicSalary.Name = "txtBasicSalary";
+            this.txtBasicSalary.ReadOnly = true;
+            this.txtBasicSalary.Size = new System.Drawing.Size(230, 20);
+            this.txtBasicSalary.TabIndex = 24;
+            // 
+            // btnEditProfile
+            // 
+            this.btnEditProfile.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnEditProfile.FlatAppearance.BorderSize = 0;
+            this.btnEditProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditProfile.ForeColor = System.Drawing.Color.White;
+            this.btnEditProfile.Location = new System.Drawing.Point(420, 392);
+            this.btnEditProfile.Name = "btnEditProfile";
+            this.btnEditProfile.Size = new System.Drawing.Size(120, 30);
+            this.btnEditProfile.TabIndex = 25;
+            this.btnEditProfile.Text = "Edit profile";
+            this.btnEditProfile.UseVisualStyleBackColor = false;
+            // 
+            // panelMain
+            // 
+            this.panelMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMain.Controls.Add(this.dgvWorkSchedule);
+            this.panelMain.Location = new System.Drawing.Point(240, 50);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1100, 610);
+            this.panelMain.TabIndex = 44;
+            // 
+            // dgvWorkSchedule
+            // 
+            this.dgvWorkSchedule.AllowUserToAddRows = false;
+            this.dgvWorkSchedule.AllowUserToDeleteRows = false;
+            this.dgvWorkSchedule.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvWorkSchedule.BackgroundColor = System.Drawing.Color.White;
+            this.dgvWorkSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvWorkSchedule.Location = new System.Drawing.Point(20, 60);
+            this.dgvWorkSchedule.Name = "dgvWorkSchedule";
+            this.dgvWorkSchedule.ReadOnly = true;
+            this.dgvWorkSchedule.RowHeadersVisible = false;
+            this.dgvWorkSchedule.Size = new System.Drawing.Size(1060, 520);
+            this.dgvWorkSchedule.TabIndex = 50;
+            // 
             // Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -644,6 +923,8 @@
             this.ClientSize = new System.Drawing.Size(1350, 680);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelProfile);
+            this.Controls.Add(this.panelMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Profile";
             this.Text = "Form1";
@@ -651,6 +932,11 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panelProfile.ResumeLayout(false);
+            this.panelProfile.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
+            this.panelMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkSchedule)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -702,6 +988,33 @@
         private System.Windows.Forms.Label EmployeeName;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panelProfile;
+        private System.Windows.Forms.PictureBox picAvatar;
+        private System.Windows.Forms.Label lblNameBig;
+        private System.Windows.Forms.Label lblRole;
+        private System.Windows.Forms.Label lblEmpId;
+        private System.Windows.Forms.Label lblGender;
+        private System.Windows.Forms.Label lblBirthday;
+        private System.Windows.Forms.Label lblCCCD;
+        private System.Windows.Forms.Label lblPhone;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblAddress;
+        private System.Windows.Forms.Label lblStartDate;
+        private System.Windows.Forms.Label lblBasicSalary;
+
+        private System.Windows.Forms.TextBox txtEmpId;
+        private System.Windows.Forms.TextBox txtGender;
+        private System.Windows.Forms.TextBox txtBirthday;
+        private System.Windows.Forms.TextBox txtCCCD;
+        private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtStartDate;
+        private System.Windows.Forms.TextBox txtBasicSalary;
+
+        private System.Windows.Forms.Button btnEditProfile;
+        private System.Windows.Forms.Panel panelMain;
+        private System.Windows.Forms.DataGridView dgvWorkSchedule;
     }
 }
 

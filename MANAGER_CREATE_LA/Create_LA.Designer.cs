@@ -74,8 +74,34 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelForm = new System.Windows.Forms.Panel();
+            this.lblTitleInner = new System.Windows.Forms.Label();
+            this.lblEmpId = new System.Windows.Forms.Label();
+            this.txtEmployeeId = new System.Windows.Forms.TextBox();
+            this.lblFullName = new System.Windows.Forms.Label();
+            this.txtFullName = new System.Windows.Forms.TextBox();
+            this.lblLeaveType = new System.Windows.Forms.Label();
+            this.cboLeaveType = new System.Windows.Forms.ComboBox();
+            this.lblFromDate = new System.Windows.Forms.Label();
+            this.dtpFromDate = new System.Windows.Forms.DateTimePicker();
+            this.lblToDate = new System.Windows.Forms.Label();
+            this.dtpToDate = new System.Windows.Forms.DateTimePicker();
+            this.lblTotalDays = new System.Windows.Forms.Label();
+            this.txtTotalDays = new System.Windows.Forms.TextBox();
+            this.lblReason = new System.Windows.Forms.Label();
+            this.txtReason = new System.Windows.Forms.TextBox();
+            this.lblContact = new System.Windows.Forms.Label();
+            this.txtContact = new System.Windows.Forms.TextBox();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.dgvWorkSchedule = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panelForm.SuspendLayout();
+            this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkSchedule)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -109,7 +135,7 @@
             this.button9.ForeColor = System.Drawing.Color.MintCream;
             this.button9.Location = new System.Drawing.Point(48, 482);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(50, 23);
+            this.button9.Size = new System.Drawing.Size(55, 23);
             this.button9.TabIndex = 18;
             this.button9.Text = "Payroll";
             this.button9.UseVisualStyleBackColor = true;
@@ -635,6 +661,262 @@
             this.panel1.Size = new System.Drawing.Size(1350, 31);
             this.panel1.TabIndex = 23;
             // 
+            // panelForm
+            // 
+            this.panelForm.BackColor = System.Drawing.Color.White;
+            this.panelForm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelForm.Controls.Add(this.lblTitleInner);
+            this.panelForm.Controls.Add(this.lblEmpId);
+            this.panelForm.Controls.Add(this.txtEmployeeId);
+            this.panelForm.Controls.Add(this.lblFullName);
+            this.panelForm.Controls.Add(this.txtFullName);
+            this.panelForm.Controls.Add(this.lblLeaveType);
+            this.panelForm.Controls.Add(this.cboLeaveType);
+            this.panelForm.Controls.Add(this.lblFromDate);
+            this.panelForm.Controls.Add(this.dtpFromDate);
+            this.panelForm.Controls.Add(this.lblToDate);
+            this.panelForm.Controls.Add(this.dtpToDate);
+            this.panelForm.Controls.Add(this.lblTotalDays);
+            this.panelForm.Controls.Add(this.txtTotalDays);
+            this.panelForm.Controls.Add(this.lblReason);
+            this.panelForm.Controls.Add(this.txtReason);
+            this.panelForm.Controls.Add(this.lblContact);
+            this.panelForm.Controls.Add(this.txtContact);
+            this.panelForm.Controls.Add(this.btnSubmit);
+            this.panelForm.Controls.Add(this.btnReset);
+            this.panelForm.Controls.Add(this.btnCancel);
+            this.panelForm.Location = new System.Drawing.Point(20, 60);
+            this.panelForm.Name = "panelForm";
+            this.panelForm.Size = new System.Drawing.Size(1060, 520);
+            this.panelForm.TabIndex = 25;
+            // 
+            // lblTitleInner
+            // 
+            this.lblTitleInner.AutoSize = true;
+            this.lblTitleInner.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblTitleInner.ForeColor = System.Drawing.Color.ForestGreen;
+            this.lblTitleInner.Location = new System.Drawing.Point(20, 15);
+            this.lblTitleInner.Name = "lblTitleInner";
+            this.lblTitleInner.Size = new System.Drawing.Size(186, 21);
+            this.lblTitleInner.TabIndex = 0;
+            this.lblTitleInner.Text = "New Leave Application";
+            // 
+            // lblEmpId
+            // 
+            this.lblEmpId.AutoSize = true;
+            this.lblEmpId.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblEmpId.Location = new System.Drawing.Point(40, 60);
+            this.lblEmpId.Name = "lblEmpId";
+            this.lblEmpId.Size = new System.Drawing.Size(73, 15);
+            this.lblEmpId.TabIndex = 1;
+            this.lblEmpId.Text = "Employee ID";
+            // 
+            // txtEmployeeId
+            // 
+            this.txtEmployeeId.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEmployeeId.Location = new System.Drawing.Point(150, 57);
+            this.txtEmployeeId.Name = "txtEmployeeId";
+            this.txtEmployeeId.ReadOnly = true;
+            this.txtEmployeeId.Size = new System.Drawing.Size(180, 23);
+            this.txtEmployeeId.TabIndex = 2;
+            // 
+            // lblFullName
+            // 
+            this.lblFullName.AutoSize = true;
+            this.lblFullName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblFullName.Location = new System.Drawing.Point(40, 95);
+            this.lblFullName.Name = "lblFullName";
+            this.lblFullName.Size = new System.Drawing.Size(61, 15);
+            this.lblFullName.TabIndex = 3;
+            this.lblFullName.Text = "Full Name";
+            // 
+            // txtFullName
+            // 
+            this.txtFullName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtFullName.Location = new System.Drawing.Point(150, 92);
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.ReadOnly = true;
+            this.txtFullName.Size = new System.Drawing.Size(250, 23);
+            this.txtFullName.TabIndex = 4;
+            // 
+            // lblLeaveType
+            // 
+            this.lblLeaveType.AutoSize = true;
+            this.lblLeaveType.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblLeaveType.Location = new System.Drawing.Point(40, 130);
+            this.lblLeaveType.Name = "lblLeaveType";
+            this.lblLeaveType.Size = new System.Drawing.Size(63, 15);
+            this.lblLeaveType.TabIndex = 5;
+            this.lblLeaveType.Text = "Leave type";
+            // 
+            // cboLeaveType
+            // 
+            this.cboLeaveType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboLeaveType.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cboLeaveType.Items.AddRange(new object[] {
+            "Annual leave",
+            "Sick leave",
+            "Unpaid leave",
+            "Maternity / Paternity",
+            "Other"});
+            this.cboLeaveType.Location = new System.Drawing.Point(150, 127);
+            this.cboLeaveType.Name = "cboLeaveType";
+            this.cboLeaveType.Size = new System.Drawing.Size(250, 23);
+            this.cboLeaveType.TabIndex = 6;
+            // 
+            // lblFromDate
+            // 
+            this.lblFromDate.AutoSize = true;
+            this.lblFromDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblFromDate.Location = new System.Drawing.Point(40, 170);
+            this.lblFromDate.Name = "lblFromDate";
+            this.lblFromDate.Size = new System.Drawing.Size(61, 15);
+            this.lblFromDate.TabIndex = 7;
+            this.lblFromDate.Text = "From date";
+            // 
+            // dtpFromDate
+            // 
+            this.dtpFromDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpFromDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFromDate.Location = new System.Drawing.Point(150, 167);
+            this.dtpFromDate.Name = "dtpFromDate";
+            this.dtpFromDate.Size = new System.Drawing.Size(120, 23);
+            this.dtpFromDate.TabIndex = 8;
+            // 
+            // lblToDate
+            // 
+            this.lblToDate.AutoSize = true;
+            this.lblToDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblToDate.Location = new System.Drawing.Point(290, 170);
+            this.lblToDate.Name = "lblToDate";
+            this.lblToDate.Size = new System.Drawing.Size(46, 15);
+            this.lblToDate.TabIndex = 9;
+            this.lblToDate.Text = "To date";
+            // 
+            // dtpToDate
+            // 
+            this.dtpToDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpToDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpToDate.Location = new System.Drawing.Point(350, 167);
+            this.dtpToDate.Name = "dtpToDate";
+            this.dtpToDate.Size = new System.Drawing.Size(120, 23);
+            this.dtpToDate.TabIndex = 10;
+            // 
+            // lblTotalDays
+            // 
+            this.lblTotalDays.AutoSize = true;
+            this.lblTotalDays.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblTotalDays.Location = new System.Drawing.Point(40, 205);
+            this.lblTotalDays.Name = "lblTotalDays";
+            this.lblTotalDays.Size = new System.Drawing.Size(60, 15);
+            this.lblTotalDays.TabIndex = 11;
+            this.lblTotalDays.Text = "Total days";
+            // 
+            // txtTotalDays
+            // 
+            this.txtTotalDays.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTotalDays.Location = new System.Drawing.Point(150, 202);
+            this.txtTotalDays.Name = "txtTotalDays";
+            this.txtTotalDays.ReadOnly = true;
+            this.txtTotalDays.Size = new System.Drawing.Size(80, 23);
+            this.txtTotalDays.TabIndex = 12;
+            // 
+            // lblReason
+            // 
+            this.lblReason.AutoSize = true;
+            this.lblReason.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblReason.Location = new System.Drawing.Point(40, 240);
+            this.lblReason.Name = "lblReason";
+            this.lblReason.Size = new System.Drawing.Size(45, 15);
+            this.lblReason.TabIndex = 13;
+            this.lblReason.Text = "Reason";
+            // 
+            // txtReason
+            // 
+            this.txtReason.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtReason.Location = new System.Drawing.Point(150, 237);
+            this.txtReason.Multiline = true;
+            this.txtReason.Name = "txtReason";
+            this.txtReason.Size = new System.Drawing.Size(480, 80);
+            this.txtReason.TabIndex = 14;
+            // 
+            // lblContact
+            // 
+            this.lblContact.AutoSize = true;
+            this.lblContact.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblContact.Location = new System.Drawing.Point(40, 330);
+            this.lblContact.Name = "lblContact";
+            this.lblContact.Size = new System.Drawing.Size(104, 15);
+            this.lblContact.TabIndex = 15;
+            this.lblContact.Text = "Contact (optional)";
+            // 
+            // txtContact
+            // 
+            this.txtContact.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtContact.Location = new System.Drawing.Point(150, 327);
+            this.txtContact.Name = "txtContact";
+            this.txtContact.Size = new System.Drawing.Size(250, 23);
+            this.txtContact.TabIndex = 16;
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnSubmit.ForeColor = System.Drawing.Color.White;
+            this.btnSubmit.Location = new System.Drawing.Point(220, 370);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(110, 30);
+            this.btnSubmit.TabIndex = 0;
+            this.btnSubmit.Text = "Submit request";
+            this.btnSubmit.UseVisualStyleBackColor = false;
+            // 
+            // btnReset
+            // 
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReset.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnReset.Location = new System.Drawing.Point(340, 370);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(80, 30);
+            this.btnReset.TabIndex = 17;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCancel.Location = new System.Drawing.Point(430, 370);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(80, 30);
+            this.btnCancel.TabIndex = 18;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            // 
+            // panelMain
+            // 
+            this.panelMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMain.Controls.Add(this.panelForm);
+            this.panelMain.Controls.Add(this.dgvWorkSchedule);
+            this.panelMain.Location = new System.Drawing.Point(240, 50);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1100, 610);
+            this.panelMain.TabIndex = 42;
+            // 
+            // dgvWorkSchedule
+            // 
+            this.dgvWorkSchedule.AllowUserToAddRows = false;
+            this.dgvWorkSchedule.AllowUserToDeleteRows = false;
+            this.dgvWorkSchedule.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvWorkSchedule.BackgroundColor = System.Drawing.Color.White;
+            this.dgvWorkSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvWorkSchedule.Location = new System.Drawing.Point(20, 60);
+            this.dgvWorkSchedule.Name = "dgvWorkSchedule";
+            this.dgvWorkSchedule.ReadOnly = true;
+            this.dgvWorkSchedule.RowHeadersVisible = false;
+            this.dgvWorkSchedule.Size = new System.Drawing.Size(1055, 520);
+            this.dgvWorkSchedule.TabIndex = 50;
+            // 
             // Create_LA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -642,6 +924,7 @@
             this.ClientSize = new System.Drawing.Size(1350, 680);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Create_LA";
             this.Text = "Form1";
@@ -649,6 +932,10 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panelForm.ResumeLayout(false);
+            this.panelForm.PerformLayout();
+            this.panelMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWorkSchedule)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -700,6 +987,30 @@
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Panel panel1;
+        // Form Create Leave Application
+        private System.Windows.Forms.Panel panelForm;
+        private System.Windows.Forms.Label lblTitleInner;
+        private System.Windows.Forms.Label lblEmpId;
+        private System.Windows.Forms.TextBox txtEmployeeId;
+        private System.Windows.Forms.Label lblFullName;
+        private System.Windows.Forms.TextBox txtFullName;
+        private System.Windows.Forms.Label lblLeaveType;
+        private System.Windows.Forms.ComboBox cboLeaveType;
+        private System.Windows.Forms.Label lblFromDate;
+        private System.Windows.Forms.DateTimePicker dtpFromDate;
+        private System.Windows.Forms.Label lblToDate;
+        private System.Windows.Forms.DateTimePicker dtpToDate;
+        private System.Windows.Forms.Label lblTotalDays;
+        private System.Windows.Forms.TextBox txtTotalDays;
+        private System.Windows.Forms.Label lblReason;
+        private System.Windows.Forms.TextBox txtReason;
+        private System.Windows.Forms.Label lblContact;
+        private System.Windows.Forms.TextBox txtContact;
+        private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Panel panelMain;
+        private System.Windows.Forms.DataGridView dgvWorkSchedule;
     }
 }
 

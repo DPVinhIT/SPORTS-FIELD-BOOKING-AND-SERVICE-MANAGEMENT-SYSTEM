@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{42783352-ACBA-4C34-B69F-387722166EA0}</ProjectGuid>
+    <ProjectGuid>{51FDCEA4-49FB-4BE2-8F2F-E611E5E82E8E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>MANAGER_VIEW_SHIFT</RootNamespace>
     <AssemblyName>MANAGER_VIEW_SHIFT</AssemblyName>

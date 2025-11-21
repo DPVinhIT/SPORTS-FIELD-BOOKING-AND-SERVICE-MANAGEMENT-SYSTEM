@@ -16,5 +16,20 @@ namespace MANAGER_APPROVE_REQUEST
         {
             InitializeComponent();
         }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Date_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
