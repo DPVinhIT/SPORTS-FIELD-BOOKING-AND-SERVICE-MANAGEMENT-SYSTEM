@@ -1,0 +1,10 @@
+C:\Private\2025\HQTCSDL\DATH\ADMIN_ACCOUNT_CP\bin\Debug\MANAGER.exe.config
+C:\Private\2025\HQTCSDL\DATH\ADMIN_ACCOUNT_CP\bin\Debug\MANAGER.exe
+C:\Private\2025\HQTCSDL\DATH\ADMIN_ACCOUNT_CP\bin\Debug\MANAGER.pdb
+C:\Private\2025\HQTCSDL\DATH\ADMIN_ACCOUNT_CP\obj\Debug\ADMIN_ACCOUNT_CP.csproj.AssemblyReference.cache
+C:\Private\2025\HQTCSDL\DATH\ADMIN_ACCOUNT_CP\obj\Debug\HQTCSDL_UI.Admin_AccountCP.resources
+C:\Private\2025\HQTCSDL\DATH\ADMIN_ACCOUNT_CP\obj\Debug\MANAGER.Properties.Resources.resources
+C:\Private\2025\HQTCSDL\DATH\ADMIN_ACCOUNT_CP\obj\Debug\ADMIN_ACCOUNT_CP.csproj.GenerateResource.cache
+C:\Private\2025\HQTCSDL\DATH\ADMIN_ACCOUNT_CP\obj\Debug\ADMIN_ACCOUNT_CP.csproj.CoreCompileInputs.cache
+C:\Private\2025\HQTCSDL\DATH\ADMIN_ACCOUNT_CP\obj\Debug\MANAGER.exe
+C:\Private\2025\HQTCSDL\DATH\ADMIN_ACCOUNT_CP\obj\Debug\MANAGER.pdb

@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Private\\2025\\HQTCSDL\\DATH\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{30427299-2833-4AC9-8561-12B278EF25A9}|ADMIN_ACCOUNT_CP\\ADMIN_ACCOUNT_CP.csproj|c:\\private\\2025\\hqtcsdl\\dath\\admin_account_cp\\admin_accountcp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{30427299-2833-4AC9-8561-12B278EF25A9}|ADMIN_ACCOUNT_CP\\ADMIN_ACCOUNT_CP.csproj|solutionrelative:admin_account_cp\\admin_accountcp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30427299-2833-4AC9-8561-12B278EF25A9}|ADMIN_ACCOUNT_CP\\ADMIN_ACCOUNT_CP.csproj|c:\\private\\2025\\hqtcsdl\\dath\\admin_account_cp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{30427299-2833-4AC9-8561-12B278EF25A9}|ADMIN_ACCOUNT_CP\\ADMIN_ACCOUNT_CP.csproj|solutionrelative:admin_account_cp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30427299-2833-4AC9-8561-12B278EF25A9}|ADMIN_ACCOUNT_CP\\ADMIN_ACCOUNT_CP.csproj|c:\\private\\2025\\hqtcsdl\\dath\\admin_account_cp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30427299-2833-4AC9-8561-12B278EF25A9}|ADMIN_ACCOUNT_CP\\ADMIN_ACCOUNT_CP.csproj|solutionrelative:admin_account_cp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Admin_AccountCP.cs [Design]",
+              "DocumentMoniker": "C:\\Private\\2025\\HQTCSDL\\DATH\\ADMIN_ACCOUNT_CP\\Admin_AccountCP.cs",
+              "RelativeDocumentMoniker": "ADMIN_ACCOUNT_CP\\Admin_AccountCP.cs",
+              "ToolTip": "C:\\Private\\2025\\HQTCSDL\\DATH\\ADMIN_ACCOUNT_CP\\Admin_AccountCP.cs [Design]",
+              "RelativeToolTip": "ADMIN_ACCOUNT_CP\\Admin_AccountCP.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T11:02:05.79Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Private\\2025\\HQTCSDL\\DATH\\ADMIN_ACCOUNT_CP\\App.config",
+              "RelativeDocumentMoniker": "ADMIN_ACCOUNT_CP\\App.config",
+              "ToolTip": "C:\\Private\\2025\\HQTCSDL\\DATH\\ADMIN_ACCOUNT_CP\\App.config",
+              "RelativeToolTip": "ADMIN_ACCOUNT_CP\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-12-08T11:02:04.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Private\\2025\\HQTCSDL\\DATH\\ADMIN_ACCOUNT_CP\\Program.cs",
+              "RelativeDocumentMoniker": "ADMIN_ACCOUNT_CP\\Program.cs",
+              "ToolTip": "C:\\Private\\2025\\HQTCSDL\\DATH\\ADMIN_ACCOUNT_CP\\Program.cs",
+              "RelativeToolTip": "ADMIN_ACCOUNT_CP\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T11:01:12.785Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -11,7 +11,7 @@ DROP PROCEDURE IF EXISTS dbo.sp_CheckRecordCounts;
 GO
 
 CREATE PROCEDURE dbo.sp_BulkInsertAllData
-    @CsvPath NVARCHAR(MAX) = 'V:\Generate_Data_VietSport\'
+    @CsvPath NVARCHAR(MAX) = 'C:\Private\2025\HQTCSDL\DATH\Scripts\Generate_Data_VietSport\Data\'
 AS
 BEGIN
     SET NOCOUNT ON;
@@ -457,6 +457,6 @@ GO
 -- ============================================================
 -- EXECUTE THE PROCEDURES
 -- ============================================================
-EXEC dbo.sp_BulkInsertAllData @CsvPath = 'V:\Generate_Data_VietSport\';
+EXEC dbo.sp_BulkInsertAllData @CsvPath = 'C:\Private\2025\HQTCSDL\DATH\Scripts\Generate_Data_VietSport\Data\';
 EXEC dbo.sp_CheckRecordCounts;
 EXEC dbo.sp_DeleteAllData
