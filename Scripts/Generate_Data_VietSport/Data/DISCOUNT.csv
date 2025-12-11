@@ -1,4 +1,4 @@
-DiscountID,DiscountName,StartDate,EndDate,Percentage,TargetUser,MID
+﻿DiscountID,DiscountName,StartDate,EndDate,Percentage,TargetUser,MID
 DSC001,Khai trương - Giảm sốc,2024-07-27,2024-07-30,20,Khách hàng mới,EMP0126
 DSC002,Flash Sale cuối tuần,2023-08-02,2023-09-01,20,Nhóm 4+ người,EMP0001
 DSC003,Happy Hour 14h-17h,2024-04-16,2024-04-30,15,Thành viên Gold,EMP0104

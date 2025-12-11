@@ -1,4 +1,4 @@
-CourtType,CourtTypeName,TypeofRental
+﻿CourtType,CourtTypeName,TypeofRental
 CTP01,Sân bóng đá mini,Theo trận (90 phút)
 CTP02,Sân cầu lông,Theo giờ
 CTP03,Sân tennis,Theo ca (2 giờ)

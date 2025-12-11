@@ -1,4 +1,4 @@
-LeaveFormID,EmployeeID,ScheduleID,DateCreate,Reason,Status
+﻿LeaveFormID,EmployeeID,ScheduleID,DateCreate,Reason,Status
 LFM0001,EMP0082,SCH0132,2024-08-11 04:25:35,Hẹn gặp luật sư,Approved
 LFM0002,EMP0003,SCH0498,2024-09-10 22:01:05,Thi cử/Học tập,Rejected
 LFM0003,EMP0109,SCH0056,2024-04-27 15:44:26,Việc gia đình khẩn cấp,Approved

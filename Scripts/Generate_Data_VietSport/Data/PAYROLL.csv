@@ -1,4 +1,4 @@
-PayrollID,Month,Year,BasicSalary,Allowance,ShiftPay,SaleCommission,PenatyFee,EmployeeID
+﻿PayrollID,Month,Year,BasicSalary,Allowance,ShiftPay,SaleCommission,PenatyFee,EmployeeID
 PRL00001,6,2024,16176437,1266541,1654880,0,0,EMP0046
 PRL00002,5,2023,19498825,1844116,1995790,2999549,0,EMP0081
 PRL00003,7,2024,13547099,1730031,976272,626449,0,EMP0070

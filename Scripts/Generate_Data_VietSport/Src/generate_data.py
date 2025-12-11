@@ -695,7 +695,7 @@ def main():
     # ---------- 1. SPORT_CENTER ----------
     center_ids = []
     center_cities = {}  # Lưu city của từng center để dùng sau
-    with open("SPORT_CENTER.csv", "w", newline="", encoding="utf-8") as f:
+    with open("SPORT_CENTER.csv", "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(
             ["CenterID", "Address", "Hotline", "OpenTime", "CloseTime", "Owner"]
@@ -759,7 +759,7 @@ def main():
         "Admin": (10_000_000, 20_000_000),
     }
 
-    with open("EMPLOYEE.csv", "w", newline="", encoding="utf-8") as f:
+    with open("EMPLOYEE.csv", "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(
             [
@@ -950,7 +950,9 @@ def main():
             )
 
     # ---------- 3. SYSTEM_PARAMETER ----------
-    with open("SYSTEM_PARAMETER.csv", "w", newline="", encoding="utf-8") as f:
+    with open(
+        "SYSTEM_PARAMETER.csv", "w", newline="", encoding="utf-8-sig"
+    ) as f:
         w = csv.writer(f)
         w.writerow(
             [
@@ -1002,7 +1004,9 @@ def main():
     # ---------- 4. EMPLOYEE_SCHEDULE ----------
     schedule_ids = []
     schedule_data = {}  # Lưu thông tin schedule để dùng cho attendance
-    with open("EMPLOYEE_SCHEDULE.csv", "w", newline="", encoding="utf-8") as f:
+    with open(
+        "EMPLOYEE_SCHEDULE.csv", "w", newline="", encoding="utf-8-sig"
+    ) as f:
         w = csv.writer(f)
         w.writerow(["ScheduleID", "StartTime", "EndTime"])
 
@@ -1040,7 +1044,7 @@ def main():
             w.writerow([sch_id, start, end])
 
     # ---------- 5. ATTENDANCE ----------
-    with open("ATTENDANCE.csv", "w", newline="", encoding="utf-8") as f:
+    with open("ATTENDANCE.csv", "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(
             [
@@ -1082,7 +1086,7 @@ def main():
             w.writerow([att_id, emp, sch, check_in, check_out, status])
 
     # ---------- 6. LEAVEFORM ----------
-    with open("LEAVEFORM.csv", "w", newline="", encoding="utf-8") as f:
+    with open("LEAVEFORM.csv", "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(
             [
@@ -1116,7 +1120,7 @@ def main():
     # ---------- 7. CUSTOMER ----------
     customer_ids = []
     customer_data = {}  # Lưu thông tin customer để sử dụng sau
-    with open("CUSTOMER.csv", "w", newline="", encoding="utf-8") as f:
+    with open("CUSTOMER.csv", "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(
             [
@@ -1214,7 +1218,7 @@ def main():
     # ---------- 8. COACH ----------
     coach_ids = []
     coach_data = {}  # Lưu thông tin HLV
-    with open("COACH.csv", "w", newline="", encoding="utf-8") as f:
+    with open("COACH.csv", "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(
             ["CoachID", "FullName", "Specialization", "ScheduleWork", "Price"]
@@ -1281,7 +1285,7 @@ def main():
     # Theo đặc tả: cầu lông/bóng rổ theo giờ, tennis theo ca 2h, bóng đá mini theo trận 90p
     court_types = []
     court_type_data = {}
-    with open("COURT_TYPE.csv", "w", newline="", encoding="utf-8") as f:
+    with open("COURT_TYPE.csv", "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(["CourtType", "CourtTypeName", "TypeofRental"])
         # (ID, Tên loại sân, Cách tính thuê)
@@ -1300,7 +1304,7 @@ def main():
     # ---------- 10. SPORT_COURT ----------
     court_ids = []
     court_data = {}
-    with open("SPORT_COURT.csv", "w", newline="", encoding="utf-8") as f:
+    with open("SPORT_COURT.csv", "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(
             ["CourtID", "CourtType", "Capacity", "UnitPrice", "CenterID"]
@@ -1360,7 +1364,7 @@ def main():
     # ---------- 11. BOOKING_FORM ----------
     booking_ids = []
     booking_data = {}
-    with open("BOOKING_FORM.csv", "w", newline="", encoding="utf-8") as f:
+    with open("BOOKING_FORM.csv", "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(
             [
@@ -1456,7 +1460,7 @@ def main():
 
     # ---------- 12. MEMBER_CARD ----------
     member_card_data = {}
-    with open("MEMBER_CARD.csv", "w", newline="", encoding="utf-8") as f:
+    with open("MEMBER_CARD.csv", "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(["CardID", "MembershipLevel", "CustomerID"])
 
@@ -1477,7 +1481,7 @@ def main():
 
     # ---------- 13. CANCEL_RULE ----------
     cancel_rule_ids = []
-    with open("CANCEL_RULE.csv", "w", newline="", encoding="utf-8") as f:
+    with open("CANCEL_RULE.csv", "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(
             [
@@ -1519,7 +1523,7 @@ def main():
 
     # ---------- 14. DISCOUNT ----------
     discount_ids = []
-    with open("DISCOUNT.csv", "w", newline="", encoding="utf-8") as f:
+    with open("DISCOUNT.csv", "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(
             [
@@ -1586,7 +1590,7 @@ def main():
             )
 
     # ---------- 15. PAYROLL ----------
-    with open("PAYROLL.csv", "w", newline="", encoding="utf-8") as f:
+    with open("PAYROLL.csv", "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(
             [
@@ -1645,7 +1649,7 @@ def main():
     # ---------- 16. SERVICE ----------
     service_ids = []
     service_data = {}
-    with open("SERVICE.csv", "w", newline="", encoding="utf-8") as f:
+    with open("SERVICE.csv", "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(
             [
@@ -1720,7 +1724,9 @@ def main():
             w.writerow([sid, name, unit, price, status])
 
     # ---------- 17. PERSONAL_CLOSET ----------
-    with open("PERSONAL_CLOSET.csv", "w", newline="", encoding="utf-8") as f:
+    with open(
+        "PERSONAL_CLOSET.csv", "w", newline="", encoding="utf-8-sig"
+    ) as f:
         w = csv.writer(f)
         w.writerow(["PCServiceID", "ClosetID", "StatusCloset"])
 
@@ -1744,7 +1750,9 @@ def main():
             w.writerow([sid, i, status])
 
     # ---------- 18. RENTING_EQUIPMENT ----------
-    with open("RENTING_EQUIPMENT.csv", "w", newline="", encoding="utf-8") as f:
+    with open(
+        "RENTING_EQUIPMENT.csv", "w", newline="", encoding="utf-8-sig"
+    ) as f:
         w = csv.writer(f)
         w.writerow(["REServiceID", "EquipmentType", "Quantity"])
 
@@ -1775,7 +1783,7 @@ def main():
             w.writerow([sid, eq_type, qty])
 
     # ---------- 19. VIP_ROOM ----------
-    with open("VIP_ROOM.csv", "w", newline="", encoding="utf-8") as f:
+    with open("VIP_ROOM.csv", "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(["VRServiceID", "RoomID", "StatusRoom"])
 
@@ -1807,7 +1815,7 @@ def main():
             w.writerow([sid, i, status_choice])
 
     # ---------- 20. RENTING_HLV ----------
-    with open("RENTING_HLV.csv", "w", newline="", encoding="utf-8") as f:
+    with open("RENTING_HLV.csv", "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(["RHServiceID", "Status", "Coach"])
 
@@ -1832,7 +1840,9 @@ def main():
             w.writerow([sid, status, pick(coach_ids)])
 
     # ---------- 21. SERVICE_BOOKING ----------
-    with open("SERVICE_BOOKING.csv", "w", newline="", encoding="utf-8") as f:
+    with open(
+        "SERVICE_BOOKING.csv", "w", newline="", encoding="utf-8-sig"
+    ) as f:
         w = csv.writer(f)
         w.writerow(["SBID", "BookingID", "ServiceID", "BookingQuantity"])
 
@@ -1858,7 +1868,7 @@ def main():
             w.writerow([sb_id, booking, service, qty])
 
     # ---------- 22. INVOICE ----------
-    with open("INVOICE.csv", "w", newline="", encoding="utf-8") as f:
+    with open("INVOICE.csv", "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(
             [
@@ -1945,7 +1955,9 @@ def main():
             )
 
     # ---------- 23. CANCELLATION_FORM ----------
-    with open("CANCELLATION_FORM.csv", "w", newline="", encoding="utf-8") as f:
+    with open(
+        "CANCELLATION_FORM.csv", "w", newline="", encoding="utf-8-sig"
+    ) as f:
         w = csv.writer(f)
         w.writerow(
             [
@@ -2014,7 +2026,7 @@ def main():
             )
 
     # ---------- 24. ACCOUNT_LOGIN (tổng hợp cuối cùng) ----------
-    with open("ACCOUNT_LOGIN.csv", "w", newline="", encoding="utf-8") as f:
+    with open("ACCOUNT_LOGIN.csv", "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(["AccountLogin", "Password"])
         for acc, pwd in sorted(accounts.items()):

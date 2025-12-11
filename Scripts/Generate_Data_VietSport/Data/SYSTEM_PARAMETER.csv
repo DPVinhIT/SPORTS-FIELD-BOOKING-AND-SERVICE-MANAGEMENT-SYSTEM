@@ -1,4 +1,4 @@
-SystemPID,SetupDate,SetupTime,Price,MinBookingTime,MaxBookingTime,MaxCourtsPerCustomer,AID
+﻿SystemPID,SetupDate,SetupTime,Price,MinBookingTime,MaxBookingTime,MaxCourtsPerCustomer,AID
 SPM001,2023-12-24,10:37:02,150000,45,120,2,EMP0068
 SPM002,2024-12-17,22:19:08,100000,60,240,5,EMP0025
 SPM003,2023-10-06,02:32:27,350000,30,300,5,EMP0059

@@ -1,4 +1,4 @@
-ServiceID,ServiceName,TimeUnitType,Price,AvailableStatus
+﻿ServiceID,ServiceName,TimeUnitType,Price,AvailableStatus
 SRV0001,Tủ đồ cá nhân loại nhỏ,Lượt,20000,Đang hoạt động
 SRV0002,Tủ đồ cá nhân loại lớn,Lượt,28000,Đang hoạt động
 SRV0003,Tủ đồ VIP có khóa điện tử,Lượt,48000,Đang hoạt động

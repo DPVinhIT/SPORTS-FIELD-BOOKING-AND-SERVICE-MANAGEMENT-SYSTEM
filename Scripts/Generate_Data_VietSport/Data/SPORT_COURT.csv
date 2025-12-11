@@ -1,4 +1,4 @@
-CourtID,CourtType,Capacity,UnitPrice,CenterID
+﻿CourtID,CourtType,Capacity,UnitPrice,CenterID
 CRT0001,CTP01,10,280000,CEN001
 CRT0002,CTP01,10,370000,CEN001
 CRT0003,CTP02,2,80000,CEN001

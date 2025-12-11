@@ -1,4 +1,4 @@
-CancelFormID,CancelTime,PenaltyPrice,Status,CancelRuleID,BookingID
+﻿CancelFormID,CancelTime,PenaltyPrice,Status,CancelRuleID,BookingID
 CNF0001,2024-02-24 19:00:00,0,Approved,CRL015,BKG00092
 CNF0002,2024-02-18 19:00:00,74198,Approved,CRL004,BKG00463
 CNF0003,2024-07-26 06:00:00,0,Approved,CRL003,BKG00064

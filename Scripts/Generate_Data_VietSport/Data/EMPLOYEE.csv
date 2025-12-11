@@ -1,4 +1,4 @@
-EmployeeID,FullName,Birthday,Gender,CCCD,Street,District,City,PhoneNumber,BasicSalary,Manager,CenterID,AccountLogin,IsManager,IsReceptionist,IsTechnician,IsCashier,IsAdmin
+﻿EmployeeID,FullName,Birthday,Gender,CCCD,Street,District,City,PhoneNumber,BasicSalary,Manager,CenterID,AccountLogin,IsManager,IsReceptionist,IsTechnician,IsCashier,IsAdmin
 EMP0001,Lương Quang Quang,1992-06-22,Nam,064098032938,363 Trần Hưng Đạo,Ninh Kiều,Cần Thơ,0975183473,37544773,,CEN001,MN0001,1,0,0,0,0
 EMP0002,Vũ Xuân Ánh,1977-03-09,Nữ,035605056802,221 Bùi Viện,Cầu Giấy,Hà Nội,0901065133,26389096,,CEN002,MN0002,1,0,0,0,0
 EMP0003,Hoàng Thanh Linh,1988-10-01,Nữ,008704102664,473 Tôn Đức Thắng,Vĩnh Ninh,Huế,0338013267,27946424,,CEN003,MN0003,1,0,0,0,0

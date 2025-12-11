@@ -1,4 +1,4 @@
-CustomerID,FullName,Birthday,PhoneNumber,Email,Address,IsOnline,IsDirectly,AccountLogin
+﻿CustomerID,FullName,Birthday,PhoneNumber,Email,Address,IsOnline,IsDirectly,AccountLogin
 CUS00001,Phan Bích Anh,1994-04-26,0818893628,anh.phan595@outlook.com,225 - Lý Tự Trọng - Tân Uyên - Bình Dương,1,0,anhp
 CUS00002,Võ Kim Nhung,1969-10-22,0342538921,nhung.vo940@protonmail.com,183 - Nam Kỳ Khởi Nghĩa - Cái Răng - Cần Thơ,0,1,
 CUS00003,Trương Kim Hạnh,1977-12-29,0709079779,hanh.truong447@gmail.com,239 - Lê Duẩn - Rạch Dừa - Vũng Tàu,0,1,

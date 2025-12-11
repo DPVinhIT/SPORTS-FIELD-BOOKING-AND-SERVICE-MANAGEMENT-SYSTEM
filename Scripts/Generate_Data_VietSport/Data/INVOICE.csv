@@ -1,4 +1,4 @@
-InvoiceID,RentTime,TotalPrice,PaymentMethod,CreateTime,Status,BookingID,DiscountID,CourtID,CID
+﻿InvoiceID,RentTime,TotalPrice,PaymentMethod,CreateTime,Status,BookingID,DiscountID,CourtID,CID
 INV00001,2024-04-11 09:00:00,296000,ZaloPay,2024-04-11 09:00:00,Đã thanh toán,BKG00936,,CRT0086,EMP0026
 INV00002,2024-03-30 18:00:00,1196000,ShopeePay,2024-03-30 18:00:00,Hủy,BKG00795,,CRT0053,EMP0140
 INV00003,2024-05-28 18:00:00,276000,ZaloPay,2024-05-28 18:00:00,Đã thanh toán,BKG00912,,CRT0017,EMP0110

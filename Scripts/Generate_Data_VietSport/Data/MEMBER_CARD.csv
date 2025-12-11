@@ -1,4 +1,4 @@
-CardID,MembershipLevel,CustomerID
+﻿CardID,MembershipLevel,CustomerID
 MBC00001,Gold,CUS00154
 MBC00002,Gold,CUS00558
 MBC00003,Gold,CUS00138
